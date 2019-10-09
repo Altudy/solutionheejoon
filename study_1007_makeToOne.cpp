@@ -1,34 +1,21 @@
-﻿#include <iostream>		// 백준 1463
-#define MAX 1000000
+#include <iostream>		// 백준 1463
+#include <algorithm>
 using namespace std;
-int d[1000001] = {};
-int x;
+int n;
+int one[1000001];
 
-void one(int i);
-
-int main() {
-		d[1] = 0;
-		cin >> x;
-
-		one(1);
-		cout << d[x];
-		return 0;
+int main()
+{
+	cin >> n;
+	one[1] = 0;
+	for (int i = 2; i <= n; i++) {
+		one[i] = one[i - 1] + 1;
+		if (i % 3 == 0) one[i] = min(one[i], one[i / 3] + 1);
+		if (i % 2 == 0) one[i] = min(one[i], one[i / 2] + 1);
+	}
+	cout << one[n];
+	return 0;
 }
-
-void one(int i) {
-	if (i > x) return;
-	if (i + 1 > MAX) return;
-	if (d[i + 1] == 0) d[i + 1] = d[i] + 1;
-	if (i * 2 > MAX) return;
-	if (d[i * 2] == 0) d[i * 2] = d[i] + 1;
-	if (i * 3 > MAX) return;
-	if (d[i * 3] == 0) d[i * 3] = d[i] + 1;
-	one(i * 3);
-	one(i * 2);
-	one(i + 1);
-}
-
-
 /*
 	정수 x
 	1. 3으로 나눈다.
