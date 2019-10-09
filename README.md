@@ -4,13 +4,6 @@ Coding Pratice / c++
 1. 스터디를 통해 일주일에 4~5개의 코딩 문제를 풀어본다.
 2. 실력이 오른다.
 
-**integerTriangle**
-```
-- 백준 1932
-1. bottom-up 방법과 top-down 방법 모두 코딩.
-2. bottom-up 일 때 필요한 예외처리가 적고, 마지막에 for문을 통한 최댓값 비교가 필요없어서 더 효율적이다.
-```
-
 **lotto**
 ```
 - 백준 6603
@@ -19,5 +12,18 @@ Coding Pratice / c++
 3. recursive 이용의 연습이 필요하다.
 ```
 
+**integerTriangle**
+```
+- 백준 1932
+1. bottom-up 방법과 top-down 방법 모두 코딩.
+2. bottom-up 일 때 필요한 예외처리가 적고, 마지막에 for문을 통한 최댓값 비교가 필요없어서 더 효율적이다.
+```
+
+**makeToOne**
+```
+- 백준 1463
+1. recursive로 풀려다가 10번 넘게 틀렸다. 결국 for문으로 코딩.
+2. 나중에 꼭 다시 한 번 풀어보기.
+```
 
 >leeheejoon / soongsil univ.
