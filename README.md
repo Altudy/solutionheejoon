@@ -20,4 +20,4 @@ Coding Pratice / c++
 ```
 
 
->leeheejoon
+>leeheejoon / soongsil univ.
