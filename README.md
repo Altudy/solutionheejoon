@@ -33,4 +33,13 @@ Coding Pratice / c++
 2. 나중에 꼭 다시 한 번 풀어보기.
 ```
 
+**wine**
+```
+- 백준 2156
+1. dynamic programming
+2. 처음부터 하나씩 직접 계산해보며 규칙을 찾아 쉽게 알고리즘을 작성하였다.
+```
+
+
+
 >leeheejoon / soongsil univ.
