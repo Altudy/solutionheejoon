@@ -37,9 +37,16 @@ Coding Pratice / c++
 ```
 - 백준 2156
 1. dynamic programming
-2. 처음부터 하나씩 직접 계산해보며 규칙을 찾아 쉽게 알고리즘을 작성하였다.
+2. bottom부터 top으로 올라가며 하나씩 직접 계산해보니 규칙을 찾아 쉽게 알고리즘을 작성하였다.
 ```
 
+**meetingTimeTable**
+```
+- 백준 1931
+1. greedy algorithm
+2. 처음에는 회의의 시작시간으로 sort하여서 시간 초과가 나왔다.
+3. 구조체를 정렬하기 위해 bool 함수를 조건식으로 하는 sort를 이용하였다. sort( , , 조건식)
+```
 
 
 >leeheejoon / soongsil univ.
