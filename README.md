@@ -42,7 +42,7 @@ Coding Pratice / c++
 
 **meetingTimeTable**
 ```
-- 백준 1931
+- [백준 1931](https://www.acmicpc.net/problem/1931)
 1. greedy algorithm
 2. 처음에는 회의의 시작시간으로 sort하여서 시간 초과가 나왔다.
 3. 구조체를 정렬하기 위해 bool 함수를 조건식으로 하는 sort를 이용하였다. sort( , , 조건식)
