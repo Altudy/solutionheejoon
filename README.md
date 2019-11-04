@@ -42,5 +42,11 @@ Coding Pratice / c++
 3. 구조체를 정렬하기 위해 bool 함수를 조건식으로 하는 sort를 이용하였다. sort( , , 조건식)
 ```
 
+**backFloyd** - [백준 1507](https://www.acmicpc.net/problem/1507)
+```
+1. greedy algorithm
+2. 주어진 값에서 직접 가지 않고 다른 길을 통해서 갈 때 최소라면 연결된 선을 지워가며 진행한다.
+3. floyd 알고리즘을 거꾸로 진행한다.
+```
 
 >leeheejoon / soongsil univ.
