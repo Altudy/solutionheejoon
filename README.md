@@ -49,4 +49,12 @@ Coding Pratice / c++
 3. floyd 알고리즘을 거꾸로 진행한다.
 ```
 
+**backFloyd** - [백준 11726](https://www.acmicpc.net/problem/11726)
+```
+1. dynamic programming
+2. 처음에 반복문으로 풀려다가 동적 계획법인걸 늦게 알고난 후 금방 풀었다. 어떤 알고리즘을 적용할지 빠르게 결정하는 것이 중요하다.
+3. 피보나찌 수열과 같다.
+4. 계속 숫자를 더하다보면 자료형의 크기를 넘을 수 있기 때문에 연산할 때마다 10007로 나누어 주어야 런타임 에러를 방지할 수 있다.
+```
+
 >leeheejoon / soongsil univ.
