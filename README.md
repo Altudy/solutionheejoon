@@ -57,4 +57,11 @@ Coding Pratice / c++
 4. 계속 숫자를 더하다보면 자료형의 크기를 넘을 수 있기 때문에 연산할 때마다 10007로 나누어 주어야 런타임 에러를 방지할 수 있다.
 ```
 
+**niceSequence** - [백준 2661](https://www.acmicpc.net/problem/2661)
+```
+1. backtracking
+2. 재귀 함수를 만들고 탈출조건을 만든다. promising 함수를 구현한다.
+3. 배열 크기를 80으로 하면 런타임 에러가 나고 81로 했을 때 에러가 안난다. 배열의 크기 주의할 것.
+```
+
 >leeheejoon / soongsil univ.
