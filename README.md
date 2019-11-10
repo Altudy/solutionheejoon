@@ -64,4 +64,11 @@ Coding Pratice / c++
 3. 배열 크기를 80으로 하면 런타임 에러가 나고 81로 했을 때 에러가 안난다. 배열의 크기 주의할 것.
 ```
 
+**sudoku** - [백준 2580](https://www.acmicpc.net/problem/2580)
+```
+1. backtracking
+2. 사람이 직접 푸는 것처럼 row, col, box의 빈칸이 적은 칸부터 숫자를 넣으며 풀고 싶었으나 실패. (나중에 도전해볼것)
+3. 자식이 유망하지 않아 올라오게 되면 내려가면서 수정한 것들을 원래대로 돌려놓는다.
+```
+
 >leeheejoon / soongsil univ.
