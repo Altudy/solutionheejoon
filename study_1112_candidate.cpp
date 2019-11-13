@@ -1,8 +1,9 @@
-﻿#include <iostream>			// 백준 1713
+#include <iostream>			// 백준 1713
 using namespace std;
 
 struct student
 {
+	student() : recommend(0), order(0) {}
 	int recommend;			// 학생의 추천 수
 	int order;				// 학생이 추천 받은 순서.
 };
@@ -16,7 +17,7 @@ int main()
 	cin >> frame;			// 사진틀의 개수
 	cin >> total;			// 전체 추천 수
 
-	student student[101] = { 0, };
+	student student[101];
 
 	while (frame > 0 && total > 0)
 	{
@@ -40,11 +41,7 @@ int main()
 			continue;
 		}
 		
-		student[i].recommend++;
-		student[i].order = total;
-		total--;
-
-		int del_rec = 1000;
+		int del_rec = 1001;
 		int del_ord = 0;
 		int del=0;
 
@@ -64,6 +61,12 @@ int main()
 			}
 		}
 		student[del].recommend = 0;
+
+		student[i].recommend++;
+		student[i].order = total;
+		total--;
+
+
 	}
 
 	for (int k = 1; k <= 100; k++)
@@ -73,11 +76,3 @@ int main()
 	}
 	return 0;
 }
-
-/*
-	for (int k = 1; k <= 10; k++)
-	{
-		cout << k << "\t" << student[k].recommend << "\t" << student[k].order << endl;
-	}
-
-*/
