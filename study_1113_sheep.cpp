@@ -1,4 +1,4 @@
-﻿#include <iostream>			// 백준 16437
+#include <iostream>			// 백준 16437
 using namespace std;
 
 struct node
@@ -10,7 +10,8 @@ struct node
 
 void go(node island[], int c);
 
-double save(0);				// 구할 수 있는 양의 수
+long long save(0);			// 구할 수 있는 양의 수
+long long final(0);
 int p;						// 부모 노드.
 
 int main()
@@ -53,7 +54,7 @@ int main()
 		}
 	}
 
-	cout << island[1].sheep;
+	cout << final;
 
 	return 0;
 }
@@ -62,7 +63,7 @@ void go(node island[], int c)
 {
 	if (c == 1)
 	{
-		island[1].sheep += save;
+		final += save;
 		return;
 	}
 
