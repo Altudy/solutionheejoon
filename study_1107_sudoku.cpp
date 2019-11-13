@@ -2,9 +2,9 @@
 using namespace std;
 
 int map[10][10];
-bool chk_row[10][10];
-bool chk_col[10][10];
-bool chk_box[10][10];
+bool chk_row[10][10]{};
+bool chk_col[10][10]{};
+bool chk_box[10][10]{};
 
 void play(int round)
 {
