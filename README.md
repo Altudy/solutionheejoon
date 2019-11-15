@@ -71,4 +71,18 @@ Coding Pratice / c++
 3. 자식이 유망하지 않아 올라오게 되면 내려가면서 수정한 것들을 원래대로 돌려놓는다.
 ```
 
+**candidate** - [백준 1713](https://www.acmicpc.net/problem/1713)
+```
+1. array
+2. 연산의 순서를 잘못하면 값이 달라질 수 있다.
+```
+
+**sheep** - [백준 16437](https://www.acmicpc.net/problem/16437)
+```
+1. recursive
+2. int 자료형으로 담을 수 있는 크기를 벗어난다. long long을 사용해야함.
+3. top에서 bottom을 불러서 진행하는 recursive가 아닌 각 leaf node에서 top으로 가는 방식으로 하니 시간초과.
+4. recursive의 연습이 더 필요하다.
+```
+
 >leeheejoon / soongsil univ.
