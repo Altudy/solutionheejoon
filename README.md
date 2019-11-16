@@ -85,4 +85,11 @@ Coding Pratice / c++
 4. recursive의 연습이 더 필요하다.
 ```
 
+**chocolate** - [백준 2163](https://www.acmicpc.net/problem/2163)
+```
+1. math / dynamic programing
+2. dp로 풀었지만 사실 수학문제. 수학문제로는 3줄로 끝날 거 dp로 풀면 70줄 정도.
+3. 2차원 배열이 대칭이고 풀기 위한 순서를 위해서는 switching 함수가 필요했다.
+```
+
 >leeheejoon / soongsil univ.
