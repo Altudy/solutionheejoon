@@ -1,4 +1,4 @@
-﻿#include <iostream>
+﻿#include <iostream>	// 백준 9095
 using namespace std;
 
 int add(int num);
