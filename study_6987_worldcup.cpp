@@ -1,4 +1,4 @@
-﻿#include <iostream>
+﻿#include <iostream>	// 백준 6987
 #include <algorithm>
 using namespace std;
 
