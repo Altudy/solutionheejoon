@@ -1,4 +1,4 @@
-﻿#include <iostream>
+﻿#include <iostream>	// 백준 2869
 using namespace std;
 int main()
 {
