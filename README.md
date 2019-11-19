@@ -92,4 +92,11 @@ Coding Pratice / c++
 3. 2차원 배열이 대칭이고 풀기 위한 순서를 위해서는 switching 함수가 필요했다.
 ```
 
+**findmin** - [백준 11003](https://www.acmicpc.net/problem/11003)
+```
+1. sliding window
+2. priority queue에 pair<int,int>를 넣어 최소값을 뽑았다. 그 최소값이 오래된 최소값이면 삭제했다.
+3. 최소값을 뽑기 위해 greater로 compare했고 최소값을 벡터에 하나씩 넣었다.
+```
+
 >leeheejoon / soongsil univ.
