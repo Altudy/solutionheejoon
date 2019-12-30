@@ -6,7 +6,7 @@ using namespace std;
 
 strategy::strategy() : target_num(0), target(NULL), rcv_num(0), snd_num(0), added(0), gap(0), chance(false) {}
 // constructor
-// ¸ğµç °ªÀ» 0À¸·Î ¸¸µç´Ù.
+// ëª¨ë“  ê°’ì„ 0ìœ¼ë¡œ ë§Œë“ ë‹¤.
 
 void strategy::readTarget(int num, int* ptrTarget)
 {
@@ -28,14 +28,14 @@ void strategy::map_first()
 	{
 		for (int k = 0; k < target_num; k++)
 		{
-			if (k == 0)			// ÀÏºÎ·¯ Áö±â À§ÇØ Áú ¼ö ÀÖ´Â Á¡¼ö¿¡ weight¸¦ ÁØ´Ù.
+			if (k == 0)			// ì¼ë¶€ëŸ¬ ì§€ê¸° ìœ„í•´ ì§ˆ ìˆ˜ ìˆëŠ” ì ìˆ˜ì— weightë¥¼ ì¤€ë‹¤.
 			{
 				int k = 0;
-				int weight = pow(10, target_num - k - 1);       // °¡±î¿î targetÀ» À§ÇÑ °¡ÁßÄ¡
-				for (int i = target[k] - 5; i < 100; i++)		// Ã¹ target ÀÌÈÄ¿¡µµ wieght¸¦ ÁÖ´Â ÀÌÀ¯´Â
-																// target ÀÌÈÄÀÇ °¡ÁßÄ¡°¡ ´õ ³·À» ¼ö µµ ÀÖ¾î ÁöÁö ¾ÊÀ» ¶§°¡ ¹ß»ı
+				int weight = pow(10, target_num - k - 1);       // ê°€ê¹Œìš´ targetì„ ìœ„í•œ ê°€ì¤‘ì¹˜
+				for (int i = target[k] - 5; i < 100; i++)		// ì²« target ì´í›„ì—ë„ wieghtë¥¼ ì£¼ëŠ” ì´ìœ ëŠ”
+																// target ì´í›„ì˜ ê°€ì¤‘ì¹˜ê°€ ë” ë‚®ì„ ìˆ˜ ë„ ìˆì–´ ì§€ì§€ ì•Šì„ ë•Œê°€ ë°œìƒ
 					for (int j = 1; j <= 5; j++)
-						win[k][i][j] = weight;        // target Æ÷ÇÔ ¾Æ·¡ 5°³ÀÇ Á¡¼ö¸¦ weight·Î ÃÊ±âÈ­
+						win[k][i][j] = weight;        // target í¬í•¨ ì•„ë˜ 5ê°œì˜ ì ìˆ˜ë¥¼ weightë¡œ ì´ˆê¸°í™”
 				for (int j = 1; j <= 5; j++)
 					win[k][target[k] - 1][j] = 0;
 				win[k][target[k] - 4][1] = 0;
@@ -44,8 +44,8 @@ void strategy::map_first()
 				win[k][target[k] - 3][5] = 0;
 				win[k][target[k] - 2][3] = 0;
 				win[k][target[k] - 2][4] = 0;
-				win[k][target[k] - 2][5] = 0;		 // target À» È¹µæÇÒ ¼ö´Â »©ÁØ´Ù.
-				for (int i = target[k] - 6; i > 0; i--)   // Á¡¼ö¸¦ µş ¼ö ÀÖ´Â ÀÚ¸®¿¡ weight¸¦ ³Ö¾îÁØ´Ù.
+				win[k][target[k] - 2][5] = 0;		 // target ì„ íšë“í•  ìˆ˜ëŠ” ë¹¼ì¤€ë‹¤.
+				for (int i = target[k] - 6; i > 0; i--)   // ì ìˆ˜ë¥¼ ë”¸ ìˆ˜ ìˆëŠ” ìë¦¬ì— weightë¥¼ ë„£ì–´ì¤€ë‹¤.
 				{
 					if (win[k][i + 1][1] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; }
 					if (win[k][i + 2][2] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; win[k][i][3] = weight; }
@@ -57,18 +57,18 @@ void strategy::map_first()
 			}
 			else
 			{
-				int weight = pow(10, target_num - k - 1);        // °¡±î¿î targetÀ» À§ÇÑ °¡ÁßÄ¡
+				int weight = pow(10, target_num - k - 1);        // ê°€ê¹Œìš´ targetì„ ìœ„í•œ ê°€ì¤‘ì¹˜
 
 				for (int i = target[k] - 5; i <= target[k] - 1; i++)
 					for (int j = 1; j <= 5; j++)
-						win[k][i][j] = weight;        // target Æ÷ÇÔ ¾Æ·¡ 5°³ÀÇ Á¡¼ö¸¦ weight·Î ÃÊ±âÈ­
+						win[k][i][j] = weight;        // target í¬í•¨ ì•„ë˜ 5ê°œì˜ ì ìˆ˜ë¥¼ weightë¡œ ì´ˆê¸°í™”
 
 				win[k][target[k] - 5][1] = 0;
 				win[k][target[k] - 5][2] = 0;
 				win[k][target[k] - 5][3] = 0;
-				win[k][target[k] - 3][1] = 0;       // target À» È¹µæÇÏÁö ¸øÇÒ ¼ö´Â »©ÁØ´Ù.
+				win[k][target[k] - 3][1] = 0;       // target ì„ íšë“í•˜ì§€ ëª»í•  ìˆ˜ëŠ” ë¹¼ì¤€ë‹¤.
 
-				for (int i = target[k] - 6; i > 0; i--)   // Á¡¼ö¸¦ µş ¼ö ÀÖ´Â ÀÚ¸®¿¡ weight¸¦ ³Ö¾îÁØ´Ù.
+				for (int i = target[k] - 6; i > 0; i--)   // ì ìˆ˜ë¥¼ ë”¸ ìˆ˜ ìˆëŠ” ìë¦¬ì— weightë¥¼ ë„£ì–´ì¤€ë‹¤.
 				{
 					if (win[k][i + 1][1] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; }
 					if (win[k][i + 2][2] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; win[k][i][3] = weight; }
@@ -79,7 +79,7 @@ void strategy::map_first()
 			}
 		}
 	}
-	else if (gap == 0) {		// »ó´ë°¡ targetÀ» ÇÏ³ª¸¸ º¸³ÂÀ» ¶§
+	else if (gap == 0) {		// ìƒëŒ€ê°€ targetì„ í•˜ë‚˜ë§Œ ë³´ëƒˆì„ ë•Œ
 		map_second(); return;
 	}
 	else if (gap == 1 || gap == 2) map_one();
@@ -92,18 +92,18 @@ void strategy::map_second()
 {
 	for (int k = 0; k < target_num; k++)
 	{
-		int weight = pow(10, target_num - k - 1);        // °¡±î¿î targetÀ» À§ÇÑ °¡ÁßÄ¡
+		int weight = pow(10, target_num - k - 1);        // ê°€ê¹Œìš´ targetì„ ìœ„í•œ ê°€ì¤‘ì¹˜
 
 		for (int i = target[k] - 5; i <= target[k] - 1; i++)
 			for (int j = 1; j <= 5; j++)
-				win[k][i][j] = weight;        // target Æ÷ÇÔ ¾Æ·¡ 5°³ÀÇ Á¡¼ö¸¦ weight·Î ÃÊ±âÈ­
+				win[k][i][j] = weight;        // target í¬í•¨ ì•„ë˜ 5ê°œì˜ ì ìˆ˜ë¥¼ weightë¡œ ì´ˆê¸°í™”
 
 		win[k][target[k] - 5][1] = 0;
 		win[k][target[k] - 5][2] = 0;
 		win[k][target[k] - 5][3] = 0;
-		win[k][target[k] - 3][1] = 0;       // target À» È¹µæÇÏÁö ¸øÇÒ ¼ö´Â »©ÁØ´Ù.
+		win[k][target[k] - 3][1] = 0;       // target ì„ íšë“í•˜ì§€ ëª»í•  ìˆ˜ëŠ” ë¹¼ì¤€ë‹¤.
 
-		for (int i = target[k] - 6; i > 0; i--)   // Á¡¼ö¸¦ µş ¼ö ÀÖ´Â ÀÚ¸®¿¡ weight¸¦ ³Ö¾îÁØ´Ù.
+		for (int i = target[k] - 6; i > 0; i--)   // ì ìˆ˜ë¥¼ ë”¸ ìˆ˜ ìˆëŠ” ìë¦¬ì— weightë¥¼ ë„£ì–´ì¤€ë‹¤.
 		{
 			if (win[k][i + 1][1] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; }
 			if (win[k][i + 2][2] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; win[k][i][3] = weight; }
@@ -118,18 +118,18 @@ void strategy::map_second()
 void strategy::map_one()
 {
 	int k = 1;
-	int weight = pow(10, target_num - k - 1);        // °¡±î¿î targetÀ» À§ÇÑ °¡ÁßÄ¡
+	int weight = pow(10, target_num - k - 1);        // ê°€ê¹Œìš´ targetì„ ìœ„í•œ ê°€ì¤‘ì¹˜
 
 	for (int i = target[k] - 5; i <= target[k] - 1; i++)
 		for (int j = 1; j <= 5; j++)
-			win[k][i][j] = weight;        // target Æ÷ÇÔ ¾Æ·¡ 5°³ÀÇ Á¡¼ö¸¦ weight·Î ÃÊ±âÈ­
+			win[k][i][j] = weight;        // target í¬í•¨ ì•„ë˜ 5ê°œì˜ ì ìˆ˜ë¥¼ weightë¡œ ì´ˆê¸°í™”
 
 	win[k][target[k] - 5][1] = 0;
 	win[k][target[k] - 5][2] = 0;
 	win[k][target[k] - 5][3] = 0;
-	win[k][target[k] - 3][1] = 0;       // target À» È¹µæÇÏÁö ¸øÇÒ ¼ö´Â »©ÁØ´Ù.
+	win[k][target[k] - 3][1] = 0;       // target ì„ íšë“í•˜ì§€ ëª»í•  ìˆ˜ëŠ” ë¹¼ì¤€ë‹¤.
 
-	for (int i = target[k] - 6; i > 0; i--)   // Á¡¼ö¸¦ µş ¼ö ÀÖ´Â ÀÚ¸®¿¡ weight¸¦ ³Ö¾îÁØ´Ù.
+	for (int i = target[k] - 6; i > 0; i--)   // ì ìˆ˜ë¥¼ ë”¸ ìˆ˜ ìˆëŠ” ìë¦¬ì— weightë¥¼ ë„£ì–´ì¤€ë‹¤.
 	{
 		if (win[k][i + 1][1] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; }
 		if (win[k][i + 2][2] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; win[k][i][3] = weight; }
@@ -142,17 +142,17 @@ void strategy::map_one()
 void strategy::map_three()
 {
 	int k = 1;
-	int weight = pow(10, target_num - k - 1);        // °¡±î¿î targetÀ» À§ÇÑ °¡ÁßÄ¡
+	int weight = pow(10, target_num - k - 1);        // ê°€ê¹Œìš´ targetì„ ìœ„í•œ ê°€ì¤‘ì¹˜
 
 	for (int i = target[k] - 5; i <= target[k] - 1; i++)
 		for (int j = 1; j <= 5; j++)
-			win[k][i][j] = weight;      // target Æ÷ÇÔ ¾Æ·¡ 5°³ÀÇ Á¡¼ö¸¦ weight·Î ÃÊ±âÈ­
+			win[k][i][j] = weight;      // target í¬í•¨ ì•„ë˜ 5ê°œì˜ ì ìˆ˜ë¥¼ weightë¡œ ì´ˆê¸°í™”
 
 	win[k][target[k] - 4][1] = 0;
 	win[k][target[k] - 4][2] = 0;
-	win[k][target[k] - 5][3] = 0;		// target À» È¹µæÇÏÁö ¸øÇÒ ¼ö´Â »©ÁØ´Ù.
+	win[k][target[k] - 5][3] = 0;		// target ì„ íšë“í•˜ì§€ ëª»í•  ìˆ˜ëŠ” ë¹¼ì¤€ë‹¤.
 
-	for (int i = target[k] - 6; i > 0; i--)   // Á¡¼ö¸¦ µş ¼ö ÀÖ´Â ÀÚ¸®¿¡ weight¸¦ ³Ö¾îÁØ´Ù.
+	for (int i = target[k] - 6; i > 0; i--)   // ì ìˆ˜ë¥¼ ë”¸ ìˆ˜ ìˆëŠ” ìë¦¬ì— weightë¥¼ ë„£ì–´ì¤€ë‹¤.
 	{
 		if (win[k][i + 1][1] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; }
 		if (win[k][i + 2][2] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; win[k][i][3] = weight; }
@@ -165,17 +165,17 @@ void strategy::map_three()
 void strategy::map_four()
 {
 	int k = 1;
-	int weight = pow(10, target_num - k - 1);        // °¡±î¿î targetÀ» À§ÇÑ °¡ÁßÄ¡
+	int weight = pow(10, target_num - k - 1);        // ê°€ê¹Œìš´ targetì„ ìœ„í•œ ê°€ì¤‘ì¹˜
 
 	for (int i = target[k] - 5; i <= target[k] - 1; i++)
 		for (int j = 1; j <= 5; j++)
-			win[k][i][j] = weight;      // target Æ÷ÇÔ ¾Æ·¡ 5°³ÀÇ Á¡¼ö¸¦ weight·Î ÃÊ±âÈ­
+			win[k][i][j] = weight;      // target í¬í•¨ ì•„ë˜ 5ê°œì˜ ì ìˆ˜ë¥¼ weightë¡œ ì´ˆê¸°í™”
 
 	win[k][target[k] - 5][1] = 0;
 	win[k][target[k] - 5][2] = 0;
-	win[k][target[k] - 5][3] = 0;		// target À» È¹µæÇÏÁö ¸øÇÒ ¼ö´Â »©ÁØ´Ù.
+	win[k][target[k] - 5][3] = 0;		// target ì„ íšë“í•˜ì§€ ëª»í•  ìˆ˜ëŠ” ë¹¼ì¤€ë‹¤.
 
-	for (int i = target[k] - 6; i > 0; i--)   // Á¡¼ö¸¦ µş ¼ö ÀÖ´Â ÀÚ¸®¿¡ weight¸¦ ³Ö¾îÁØ´Ù.
+	for (int i = target[k] - 6; i > 0; i--)   // ì ìˆ˜ë¥¼ ë”¸ ìˆ˜ ìˆëŠ” ìë¦¬ì— weightë¥¼ ë„£ì–´ì¤€ë‹¤.
 	{
 		if (win[k][i + 1][1] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; }
 		if (win[k][i + 2][2] == 0) { win[k][i][1] = weight; win[k][i][2] = weight; win[k][i][3] = weight; }
@@ -204,12 +204,12 @@ void strategy::receive(int num)
 int strategy::send()
 {
 	if (snd_num == 0)
-	{	//½ÃÀÛÇÒ °æ¿ì.
+	{	//ì‹œì‘í•  ê²½ìš°.
 		snd_num = rcv_num + start();
 		return snd_num;
 	}
-	int min(10000000);   // °¡Àå Á¡¼ö¸¦ µş ¼ö ¾ø´Â ¼ö.
-	int add(0);     // ´õÇÒ ¼ö
+	int min(10000000);   // ê°€ì¥ ì ìˆ˜ë¥¼ ë”¸ ìˆ˜ ì—†ëŠ” ìˆ˜.
+	int add(0);     // ë”í•  ìˆ˜
 
 	if (added != 1)
 	{
@@ -246,7 +246,7 @@ int strategy::send()
 int strategy::start()
 {
 	int min(10000000);
-	int best(0);		// º¸³»±â °¡Àå ÁÁÀº ¼ö. °¡Àå ÀÛÀº ¼ö. Á¡¼ö¸¦ µş ¼ö ¾ø´Â ¼ö.
+	int best(0);		// ë³´ë‚´ê¸° ê°€ì¥ ì¢‹ì€ ìˆ˜. ê°€ì¥ ì‘ì€ ìˆ˜. ì ìˆ˜ë¥¼ ë”¸ ìˆ˜ ì—†ëŠ” ìˆ˜.
 	for (int i = 1; i <= 5; i++)
 	{
 		if (vic[added + i][i] < min)
@@ -271,7 +271,7 @@ void strategy::use_chance(int& add)
 }
 
 strategy::~strategy()
-{			 // ¼Ò¸êÀÚ
+{			 // ì†Œë©¸ì
 	delete[] target;
 	target = NULL;
 }
