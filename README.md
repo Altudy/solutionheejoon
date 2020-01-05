@@ -99,4 +99,11 @@ Coding Pratice / c++
 3. 최소값을 뽑기 위해 greater로 compare했고 최소값을 벡터에 하나씩 넣었다.
 ```
 
+**sleepy** - [백준 9519](https://www.acmicpc.net/problem/9519)
+```
+1. string. 반복문
+2. 반복을 줄일 방법을 생각해야 시간초과를 하지 않을 수 있다.
+3. 반복에 규칙이 없을 수도 있다.
+```
+
 >leeheejoon / soongsil univ.
