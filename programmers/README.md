@@ -1,4 +1,8 @@
-**jungbosum** - [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057#)
+programmers / c++
+------------------
+
+**[문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057#)**
+
 ```
 1. 2020 카카오 공채
 2. 어려운 문법을 쓰지 않지만 구현과 깊은 생각이 요구된다.
