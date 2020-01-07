@@ -1,4 +1,4 @@
-﻿#include<iostream>
+﻿#include<iostream>	//8556 북북서
 #include<string>
 #include<math.h>
 using namespace std;
