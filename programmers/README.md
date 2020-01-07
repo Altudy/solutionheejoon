@@ -1,7 +1,7 @@
 programmers / c++
 ------------------
 
-**[문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057#)**
+[문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057#)
 
 ```
 1. 2020 카카오 공채
