@@ -1,4 +1,4 @@
-﻿#include<iostream>
+﻿#include<iostream>	// 9229 한빈이와 Spot Mart
 #include<algorithm>
 using namespace std;
 
