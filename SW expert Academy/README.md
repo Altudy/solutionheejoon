@@ -19,3 +19,11 @@ SW expert Academy / c++
 4. 가능한 숫자 조합을 초기 작업으로 구하여 배열에 저장한다.
 5. query()로 결과를 받았을 때 정답을 배열에 있다고 가정하고 fake_query로 같은 결과가 나오는 것만 살린다. -> 핵심. 후보를 제거하는 방법.
 ```
+
+[9229 한빈이와 Spot Mart](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AW8Wj7cqbY0DFAXN)
+
+```
+1. greedy algorithm
+2. 가장 크게 가져갈 수 있는 물건부터 집는다. 범위를 넘어가면 바로 다음 것을 집는다.
+3. index를 잘 정해주어야 한다.
+```
