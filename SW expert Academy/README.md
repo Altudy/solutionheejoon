@@ -27,3 +27,11 @@ SW expert Academy / c++
 2. 가장 크게 가져갈 수 있는 물건부터 집는다. 범위를 넘어가면 바로 다음 것을 집는다.
 3. index를 잘 정해주어야 한다.
 ```
+
+[8016 홀수 피라미드](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWvzGUKKPVwDFASy)
+
+```
+1. 수학
+2. 공식을 찾아서 간단하게 풀었다.
+3. pow() 함수는 double형을 반환하기에 e^ 형태로 값이 출력되므로 주의하라.
+```
