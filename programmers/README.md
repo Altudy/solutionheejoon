@@ -27,3 +27,12 @@ programmers / c++
 3. bitset<n>(a) : int형 a를 n길이의 2진수로 나타낸다. or 연산자 | 를 사용한다.
 4. .to_string()함수로 스트링 변환 후 값을 수정한다.
 ```
+
+[스티커 모으기(2)](https://programmers.co.kr/learn/courses/30/lessons/12971)
+
+```
+1. 서머코딩/위터코딩(~2018)
+2. dynamic programming
+3. 포도주 시식과 비슷하다. 처음과 끝을 이엇다는 조건만 추가해주면 된다.
+4. 처음 것을 제외하고 보았을 때 + 마지막 것을 제외하고 보았을 때 경우를 나누어 계산한다.
+```
