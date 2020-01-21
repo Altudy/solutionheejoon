@@ -27,3 +27,11 @@ Codeforces / c++
 4. 두 string의 인자를 하나씩 비교하면서 a가 b보다 작으면 바꾸어 보고 a<b 이면 오케이. 아니면 다시 원래대로.
 5. a[i]==a[j]일 때는 비교 안하도록 하여 반복을 줄였다.
 ```
+
+[1288 C Two Arrays](https://codeforces.com/problemset/problem/1288/C)
+
+```
+1. dynamic programming
+2. 방식을 떠올리는게 중요하다. 내림차순 배열 b를 거꾸로 뒤집어 a에 붙이면 길이 m*2의 오름차순 배열이 된다.
+3. 2차원 벡터를 생성하여 dp방식으로 데이터를 채워간다.
+```
