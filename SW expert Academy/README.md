@@ -35,3 +35,11 @@ SW expert Academy / c++
 2. 공식을 찾아서 간단하게 풀었다.
 3. pow() 함수는 double형을 반환하기에 e^ 형태로 값이 출력되므로 주의하라.
 ```
+
+[8771 덧셈 문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AW3R9ga6F9wDFATy&categoryId=AW3R9ga6F9wDFATy&categoryType=CODE&&&&&&)
+
+```
+1. 시간 줄이는 문제
+2. 공식과 예외만 처리하면 쉽다.
+3. endl 말고 "\n" 사용하여 통과했다.
+```
