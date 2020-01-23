@@ -121,3 +121,13 @@
 1. dynamic programming
 2. 포도주 시식과 비슷하다. 전형적인 dp 문제.
 ```
+
+**알고스팟** - [백준 1261](https://www.acmicpc.net/problem/1261)
+```
+1. Dijkstra Algorithm
+2. 벽을 부수는 길을 갈 때 weight를 1이라고 하고 map을 만든다.
+3. 네 방향으로 이동하며 dist[][]를 최신화 시킨다.
+4. visited[][]를 만들었다가 늦게 가더라도 더 적은 distance가 있을 수 있으므로 없앴다.
+5. queue가 아닌 priority_queue or structure를 사용하여 distance 순으로 뽑아냈다면 고려하는 경우의 수가 많이 줄어들 것이다.
+6. memset()은 다차원 배열도 1차원 배열과 동일하게 초기화 할 수 있지만 0, -1만 가능하다.
+```
