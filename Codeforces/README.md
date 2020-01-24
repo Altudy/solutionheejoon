@@ -35,3 +35,27 @@ Codeforces / c++
 2. 방식을 떠올리는게 중요하다. 내림차순 배열 b를 거꾸로 뒤집어 a에 붙이면 길이 m*2의 오름차순 배열이 된다.
 3. 2차원 벡터를 생성하여 dp방식으로 데이터를 채워간다.
 ```
+
+[1294 A Collecting Coins](http://codeforces.com/contest/1294/problem/A)
+
+```
+1. math
+2. div.3 contest 문제
+3. 굉장히 쉬움에도 간단한 예외를 생각하지 못해 한 번 틀렸다. 신중히 풀어서 한 번에 맞도록 하자.
+```
+
+[1294 C Product of Three Numbers](http://codeforces.com/contest/1294/problem/C)
+
+```
+1. math
+2. div.3 contest 문제
+3. 하나씩 수를 나누어 보면서 가장 작은 약수를 찾아 출력하였다.
+```
+
+[1294 D MEX maximizing](http://codeforces.com/contest/1294/problem/D)
+
+```
+1. div.3 contest 문제
+2. 어떤 수인지 보다 x로 나누었을 때 나머지가 무엇인지가 중요.
+3. line이라는 변수를 활용하여 심플하게 코드를 작성하였다.
+```
