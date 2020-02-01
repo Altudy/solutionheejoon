@@ -1,4 +1,4 @@
-Coding Pratice / c++
+Algorithm Pratice / c++
 ------------------
 
 1. 스터디를 통해 일주일에 4~5개의 알고리즘 문제 풀이.
