@@ -131,3 +131,18 @@
 5. queue가 아닌 priority_queue or structure를 사용하여 distance 순으로 뽑아냈다면 고려하는 경우의 수가 많이 줄어들 것이다.
 6. memset()은 다차원 배열도 1차원 배열과 동일하게 초기화 할 수 있지만 0, -1만 가능하다.
 ```
+
+**소가 정보섬에 올라온 이유** - [백준 17128](https://www.acmicpc.net/problem/17128)
+```
+1. 구현
+2. endl은 시간이 오래 걸린다. '\n' 쓰자.
+3. mul[]의 합을 ans에 저장하고 장난을 칠때마다 mul과 ans를 바꿨다.
+```
+
+**Stop Using Money** - [백준 14974](https://www.acmicpc.net/problem/14674)
+```
+1. sort 비교문
+2. struct를 만들고 변수들을 비교하여 오름차순 내림차순으로 정렬하도록 cmp 정의했다.
+3. double형은 비교함수 ==를 쓰지 않는다.
+4. 소수 비교를 최대한 하지 말아라.
+```
