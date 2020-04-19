@@ -211,4 +211,5 @@
 4. 항상 a<b는 아니기 때문에 체크해야한다.
 ```
 [segment tree 참고 링크](https://bowbowbow.tistory.com/4)
+
 [lazy propagation 참고 링크](https://wkdtjsgur100.github.io/segment-tree)
