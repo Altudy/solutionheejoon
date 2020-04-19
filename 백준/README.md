@@ -200,7 +200,15 @@
 **XOR** - [백준 12844](https://www.acmicpc.net/problem/12844)
 ```
 1. Segment tree with lazy propagation
-2. segment tree : 구간의 합(또는 어떠한 연산)을 쉽게 구하기 위해서 구성한 트리. [참고링크](https://bowbowbow.tistory.com/4)
-   lazy propagation : tree의 update를 나중에 필요할 때 함으로 더 효율적으로 update하는 방법. [참고링크](https://wkdtjsgur100.github.io/segment-tree)
-3. 
+2. segment tree : 구간의 합(또는 어떠한 연산)을 쉽게 구하기 위해서 구성한 트리. 
+   lazy propagation : tree의 update를 나중에 필요할 때 함으로 더 효율적으로 update하는 방법. 
+3. 알고리즘
+  - 입력을 받고 만든 array로 tree를 만든다.
+  - propagation : lazy값이 있으면 tree 값을 갱신하고 아래로 lazy 값을 전파
+                  같은 값을 2번 ^ 하면 0이므로 이를 활용하여 계산한다.
+  - 1번 쿼리 : propagation을 한 후 범위에 해당하는 tree의 값들을 xor(^) 한다.
+  - 2번 쿼리 : propagation을 한 후 tree를 갱신, 아래로 lazy 값을 전파한다. 마지막 return 문장을 통해 위로도 전파가 된다.
+4. 항상 a<b는 아니기 때문에 체크해야한다.
 ```
+[segment tree 참고 링크](https://bowbowbow.tistory.com/4)
+[lazy propagation 참고 링크](https://wkdtjsgur100.github.io/segment-tree)
