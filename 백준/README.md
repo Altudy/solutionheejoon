@@ -196,3 +196,11 @@
   - 연결되어 있는 edge들을 하나씩 확인하며 연결 가능한지 확인하고 연결되면 match에 저장.
   - 연결이 될 때마다 하나씩 저장. 
 ```
+
+**XOR** - [백준 12844](https://www.acmicpc.net/problem/12844)
+```
+1. Segment tree with lazy propagation
+2. segment tree : 구간의 합(또는 어떠한 연산)을 쉽게 구하기 위해서 구성한 트리. [참고링크](https://bowbowbow.tistory.com/4)
+   lazy propagation : tree의 update를 나중에 필요할 때 함으로 더 효율적으로 update하는 방법. [참고링크](https://wkdtjsgur100.github.io/segment-tree)
+3. 
+```
