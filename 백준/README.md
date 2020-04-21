@@ -174,7 +174,7 @@
 
 **튀김 소보루** - [백준 12842](https://www.acmicpc.net/problem/12842)
 ```
-1. 구현, 효율
+1. lev 3, 구현, 효율
 2. 첫 번째 방법 : i를 증가시키면서 time[i]이 나눠지면 해당 사람이 먹은 것으로 처리
 3. 두 번째 방법 : i를 1부터 너무 큰 수까지 증가시켜야 하므로 이를 줄이자.
                  sol()함수는 해당 시간까지 사람들이 먹을 수 있는 빵의 수이다.
@@ -188,7 +188,7 @@
 
 **복수전공** - [백준 12843](https://www.acmicpc.net/problem/12843)
 ```
-1. 이분매칭
+1. lev 3, 이분매칭
 2. 이분매칭은 두 집단이 최대로 연결 가능한 수를 찾는 법이다. 중복된 수업의 수를 찾아내어 전체에서 뺀다.
 3. 알고리즘
   - 한쪽에 컴공, 한쪽에 소프트웨어 수업이 몰려있다고 생각
@@ -199,7 +199,7 @@
 
 **XOR** - [백준 12844](https://www.acmicpc.net/problem/12844)
 ```
-1. Segment tree with lazy propagation
+1. lev 4, Segment tree with lazy propagation
 2. segment tree : 구간의 합(또는 어떠한 연산)을 쉽게 구하기 위해서 구성한 트리. 
    lazy propagation : tree의 update를 나중에 필요할 때 함으로 더 효율적으로 update하는 방법. 
 3. 알고리즘
@@ -213,3 +213,9 @@
 [segment tree 참고 링크](https://bowbowbow.tistory.com/4)
 
 [lazy propagation 참고 링크](https://wkdtjsgur100.github.io/segment-tree)
+
+**모두의 마블** - [백준 12845](https://www.acmicpc.net/problem/12845)
+```
+1. lev 1, 구현
+2. 가장 level이 큰 카드와 계속 합성을 하는 것이 가장 큰 gold를 얻을 수 있다.
+```
