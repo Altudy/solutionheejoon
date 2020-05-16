@@ -59,3 +59,36 @@ Codeforces / c++
 2. 어떤 수인지 보다 x로 나누었을 때 나머지가 무엇인지가 중요.
 3. line이라는 변수를 활용하여 심플하게 코드를 작성하였다.
 ```
+
+[1353 A Most Unstable Array](http://codeforces.com/contest/1353/problem/A)
+
+```
+1. lev 1, 구현
+2. 문제는 굉장히 어렵게 설명되어 있지만 실제로 예시를 해보면 답이 보인다.
+3. 1개는 0이고, 2개는 0과 자신으로 나눌 수 있고 3개 이상은 반으로 쪼개서 자신의 1배가 된다.
+```
+
+[1353 B Two Arrays And Swaps](http://codeforces.com/contest/1353/problem/B)
+
+```
+1. lev 2, 구현
+2. 풀 수 있는 방법이 굉장히 많아 보임. 더 효율적인 방법이 있을 것 같음.
+3. 두 배열을 따로 저장한 후 sort, 큰 것을 고르고 배열 b에서 고를 수 있는 것은 k번까지만.
+```
+
+[1353 C Board Moves](http://codeforces.com/contest/1353/problem/C)
+
+```
+1. lev 2, 수학
+2. 처음부터 하나씩 해보면 답을 쉽게 알 수 있음.
+3. DP로 저장하면서 풀기엔 메모리가 너무 많이 필요해서 그때 그때 계산하도록 하였음.
+```
+
+[1353 D Constructing the Array](http://codeforces.com/contest/1353/problem/D)
+
+```
+1. lev 3, priority queue
+2. 문제 이해가 쉽지 않았음. 이전의 계산을 사용할 수 없음
+3. struct를 pq에 넣음. gap이 큰 것부터 나오도록 cmp 함수를 정의.
+   top으로 뽑아내면 중간에 값을 집어 넣고 구간을 다시 설정하여 pq에 넣음.
+```
