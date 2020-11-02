@@ -2,12 +2,6 @@
 ------------------
 
 
-**벚꽃이 정보섬에 피어난 이유** - [백준 17127](https://www.acmicpc.net/problem/17127)
-```
-1. 숭실대학교 출제 문제. 각 펫말의 경계선을 for문으로 정하여 계산.
-2. leechanwoo 코드 참고할 것.
-```
-
 **로또** - [백준 6603](https://www.acmicpc.net/problem/6603)
 ```
 1. 6중 for문 방법과 그 for문을 recursive를 이용하여 코딩.
@@ -130,13 +124,6 @@
 4. visited[][]를 만들었다가 늦게 가더라도 더 적은 distance가 있을 수 있으므로 없앴다.
 5. queue가 아닌 priority_queue or structure를 사용하여 distance 순으로 뽑아냈다면 고려하는 경우의 수가 많이 줄어들 것이다.
 6. memset()은 다차원 배열도 1차원 배열과 동일하게 초기화 할 수 있지만 0, -1만 가능하다.
-```
-
-**소가 정보섬에 올라온 이유** - [백준 17128](https://www.acmicpc.net/problem/17128)
-```
-1. 구현
-2. endl은 시간이 오래 걸린다. '\n' 쓰자.
-3. mul[]의 합을 ans에 저장하고 장난을 칠때마다 mul과 ans를 바꿨다.
 ```
 
 **Stop Using Money** - [백준 14974](https://www.acmicpc.net/problem/14674)
