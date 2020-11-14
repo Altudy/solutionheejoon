@@ -22,3 +22,14 @@ LeetCode / c++
 4. 새로운 object를 만들어서 next에 할당하지 않아도 next의 주소만을 node가 계속 최신화한다.
 5. node가 linked list의 각 노드를 가리키는 포인터가 되어 하나의 컨트롤러가 된다.
 ```
+
+**3) [Longest Substring Without Repeating Characters](https://leetcode.com/problems/Longest Substring Without Repeating Characters/)**
+```
+1. Medium, Hash Table, Two Pointers, String, Sliding Window
+2. 두 개의 index를 이용하여 Sliding Window 방식을 사용했다
+3. best solution
+  1) start를 최신화 시키면서 최대 길이를 정한다
+  2) 새로 추가되는 문자가 start 이후에 이미 있었으면 start를 이미 있던 문자 다음 위치로 이동시킨다.
+  3) 그리고 새로 추가되는 문자의 위치를 최신화 시킨다.
+  4) O(N)의 복잡도
+```
