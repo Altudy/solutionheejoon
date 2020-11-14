@@ -1,15 +1,20 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        map<int,int> tree;
-
+        vector<int> ans;
+        unordered_map<int,int> tree;
+        int cur;
+        
         for(int i=0; i<nums.size(); i++)
         {
-            if(tree.find(target-nums[i])!=tree.end()){
-                return vector<int>{tree.find(target-nums[i])->second, i};
+            cur = target - nums[i];
+            if(tree.find(cur) != tree.end()){
+                ans.push_back(i);
+                ans.push_back(tree[cur]);
+                return ans;
             }
-            tree.insert(pair<int, int>(nums[i],i));
+            tree[nums[i]]=i;
         }
-        return vector<int>{0,1};
+        return ans;
     }
 };
