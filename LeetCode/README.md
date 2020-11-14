@@ -1,9 +1,7 @@
 LeetCode / c++
 ------------------
 
-**1) Two Sum** - [1번](https://leetcode.com/problems/two-sum/)
-[**1) Two Sum**](https://leetcode.com/problems/two-sum/)
-**[1) Two Sum](https://leetcode.com/problems/two-sum/)**
+**1) [Two Sum](https://leetcode.com/problems/two-sum/)**
 ```
 1. Easy, Array, Hash Table
 2. 2중 for문을 쓰면 효율적이지 못하다.
@@ -11,7 +9,7 @@ LeetCode / c++
 4. insert로 원소를 넣는 것보다 그냥 넣는것이 더 빠르다.
 ```
 
-**2) Add Two Numbers** - [2번](https://leetcode.com/problems/add-two-numbers/)
+**2) [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)**
 ```
 1. Medium, Linked List, Math
 2. pointer의 이해와 활용이 필요하다. 이중 포인터.
