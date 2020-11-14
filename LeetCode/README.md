@@ -23,7 +23,7 @@ LeetCode / c++
 5. node가 linked list의 각 노드를 가리키는 포인터가 되어 하나의 컨트롤러가 된다.
 ```
 
-**3) [Longest Substring Without Repeating Characters](https://leetcode.com/problems/Longest Substring Without Repeating Characters/)**
+**3) [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)**
 ```
 1. Medium, Hash Table, Two Pointers, String, Sliding Window
 2. 두 개의 index를 이용하여 Sliding Window 방식을 사용했다
