@@ -13,7 +13,7 @@ public:
                 ans.push_back(tree[cur]);
                 return ans;
             }
-            tree[nums[i]]=i;
+            tree[nums[i]]=i;    // it's fater than tree.insert()
         }
         return ans;
     }
