@@ -8,3 +8,17 @@ LeetCode / c++
 3. map을 사용해서 하나의 for문으로 구현한다.
 4. insert로 원소를 넣는 것보다 그냥 넣는것이 더 빠르다.
 ```
+
+**2) Add Two Numbers** - [2번](https://leetcode.com/problems/add-two-numbers/)
+```
+1. Medium, Linked List, Math
+2. pointer의 이해와 활용이 필요하다. 이중 포인터.
+3. 알고리즘
+  1) List의 가장 처음이 되는 *ans 를 선언한다.
+  2) *ans 를 가리키는 **node를 가지고 코드를 진행할 것이다. <= 이게 키포인트.
+  3) sum으로 value를 계속 만들어주고 carry가 자동으로 만들어진다.
+  4) 현재 node가 가리키는 *node를 new ListNode를 이용해서 초기화해준다.
+  5) node가 가리키는 곳을 *node의 주소로 바꾸어 위를 반복한다.
+4. 새로운 object를 만들어서 next에 할당하지 않아도 next의 주소만을 node가 계속 최신화한다.
+5. node가 linked list의 각 노드를 가리키는 포인터가 되어 하나의 컨트롤러가 된다.
+```
