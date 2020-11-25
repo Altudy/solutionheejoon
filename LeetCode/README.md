@@ -33,3 +33,13 @@ LeetCode / c++
   3) 그리고 새로 추가되는 문자의 위치를 최신화 시킨다.
   4) O(N)의 복잡도
 ```
+
+**5) [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-palindromic-substring/)**
+```
+1. Medium, String, DP, palindrome
+2. 나는 길이가 짝수일 때와 홀수일 때를 나누어서 계산하였다. pal 이라는 vector를 따로 두기도 하였고 다른 것으로 대체할 수도 있을것 같았다.
+3. best solution
+  1) 중복된 문자들을 처리하여 한번에 뛰어 넘고 홀짝을 동시에 처리한다.
+  2) 중간 값이 없이 왼쪽(l), 오른쪽(r) 만으로 길이를 계산한다.
+4. 앞으로 팰린드롬은 이 방법을 사용하자.
+```
