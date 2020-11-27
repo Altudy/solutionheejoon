@@ -34,6 +34,20 @@ LeetCode / c++
   4) O(N)의 복잡도
 ```
 
+**4) [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)**
+```
+1. Hard, Array, Binary Search, Divide and conquer
+2. 두 벡터의 시작에서부터 2개의 지점을 비교해가며 median 값까지 진행하였다.
+  - 예외를 처리하고 코드를 추가할수록 지저분해진다.
+3. best solution 1
+4. best solution 2
+  1) 나와 비슷한 방법으로 두 벡터의 앞에서부터 작은 값을 val에 넣고 이전 값을 prev_val에 넣는다. 두 값을 저장하면서 홀짝 모두 동작 가능하다.
+  2) 나처럼 예외처리를 하지 않고 한쪽 vector가 끝나더라도 이전과 동일하게 진행한다.
+5. best solution 3
+  1) merge function으로 두 벡터를 합친다.
+  2) median 값을 구한다.
+```
+
 **5) [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)**
 ```
 1. Medium, String, DP, palindrome
@@ -46,3 +60,4 @@ LeetCode / c++
   1) brute force 방법은시작과 끝을 찾는 O(n^2) + 팰린드롬 검사 O(n)
   2) 이전 정보를 사용하면 O(n^2) + 팰린드롬 검사 O(1)
 ```
+
