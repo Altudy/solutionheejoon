@@ -61,3 +61,18 @@ LeetCode / c++
   2) 이전 정보를 사용하면 O(n^2) + 팰린드롬 검사 O(1)
 ```
 
+**11) [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)**
+```
+1. Medium, Array, Two pointers
+2. 양쪽의 값 중 작은 값을 더 큰 값이 되도록 당긴다.
+  1) test에 cout을 넣으면 시간이 더 오래 걸리므로 마지막엔 제거한다.
+  2) 예외처리를 적게 하는 것이 더 빠를 수도 있다.
+  3) 모든 예외가 한번에 처리되는 알고리즘을 찾아라.
+3. best solution
+  1) 나와 크게 다른 것이 없다.
+  2) 한번에 한번씩 당긴다.
+  3) 실행시킬 때마다 시간이 조금 다르기도 하다.
+4. complexity
+  1) brute force 방법은시작과 끝을 찾는 O(n^2) + 팰린드롬 검사 O(n)
+  2) 이전 정보를 사용하면 O(n^2) + 팰린드롬 검사 O(1)
+```
