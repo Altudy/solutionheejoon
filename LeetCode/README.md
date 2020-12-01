@@ -73,3 +73,13 @@ LeetCode / c++
   2) 한번에 한번씩 당긴다.
   3) 실행시킬 때마다 시간이 조금 다르기도 하다.
 ```
+
+**15) [3Sum](https://leetcode.com/problems/3sum/)**
+```
+1. Medium, Array, Two pointers
+2. map과 set을 활용한다.
+  1) 배열의 모든 값을 map에 넣으면서 그 수의 숫자를 증가시킨다. map<number, count>
+  2) 이중 for문으로 두 값을 가리키고 map에 합이 0이 되는 나머지 값이 있는 지 확인한다.
+  3) 중복된 것을 없애기 위해 결과를 set에 넣은 후 마지막에 ans에 옮긴다.
+3. best solution
+```
