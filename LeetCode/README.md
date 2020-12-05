@@ -100,3 +100,15 @@ LeetCode / c++
     b) 가장 작은 놈 기준 오른쪽 부분배열에서 양쪽에서 다가온다.
     c) 합이 0이 될 때 값의 대소관계를 알고 있으니 그대로 결과 vector에 넣는다.
 ```
+
+**15) [3Sum](https://leetcode.com/problems/3sum/)**
+```
+1. Medium, String, Backtracking, Depth first Search, Recursion
+2. 재귀를 사용하여 해결한다.
+  1) 길이가 0일 때 빈 벡터를 return
+  2) 함수 addletter()는 string과 digits 길이를 인자로 받는다.
+  3) addletter()에서 탈출조건은 남은 길이 l이다. l==0 이면 ans에 s를 넣고 함수 종료
+  4) digits의 해당 순서의 문자를 집어넣고 다음 재귀로 들어간다.
+3. 다른 solution들과 방법이 같다.
+```
+
