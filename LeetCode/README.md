@@ -112,3 +112,12 @@ LeetCode / c++
 3. 다른 solution들과 방법이 같다.
 ```
 
+**19) [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)**
+```
+1. Medium, Linked List, Two Pointers
+2. 노드들의 포인터를 벡터에 저장하고 알맞은 위치의 포인터 하나만 바꿔줌
+3. best solution
+  1) vector로 저장하지 않고 n의 간격을 가진 두 포인터가 같이 전진함
+  2) 속도 차이는 없음
+  3) 맨 앞에 노드를 하나 더 만들면서 예외를 처리함
+```
