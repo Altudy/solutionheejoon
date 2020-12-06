@@ -132,3 +132,17 @@ LeetCode / c++
   3) 왼쪽 괄호가 들어오면 짝이 맞는 오른쪽 괄호를 넣고, 오른쪽 괄호가 들어오면 stack.top에 자신이 있어야만 옳다.
 ```
 
+**21) [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)**
+```
+1. Easy, Linked List
+2. 화살표가 번갈아가며 나와야 한다. l1은 항상 다음 화살표의 시작이다.
+  1) 가장 처음 예외의 return 조건을 붙인다.
+  2) l1과 l2 중에 더 작은 val로 시작하는 놈을 ans에 넣는다.
+  3) l1의 다음의 val이 l2의 val보다 클때까지 진행
+  4) l1의 끝이 nullptr이면 break
+  5) l1의 끝이 nullptr이 아니면 화살표를 잇고 swap
+3. best solution
+  1) 이 코드를 내 컴퓨터로 돌리니 시간이 똑같이 걸렸다.
+  2) 새로운 ListNode* 를 만들어서 새로운 길을 만든다.
+  3) 따로 빠져나가는 코드는 없다.
+```
