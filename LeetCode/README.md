@@ -121,3 +121,14 @@ LeetCode / c++
   2) 속도 차이는 없음
   3) 맨 앞에 노드를 하나 더 만들면서 예외를 처리함
 ```
+
+**20) [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)**
+```
+1. Easy, String, Stack
+2. stack에 왼쪽 괄호들을 넣고 짝을 찾으면 pop. 마지막까지 수행했을 때 stack이 비어야 true를 반환
+3. best solution
+  1) 왼쪽 괄호를 보고 오른쪽 괄호를 stack에 넣는 방식이 다르다.
+  2) 이렇게 하면 일찍 탈출하는 코드가 만들어진다.
+  3) 왼쪽 괄호가 들어오면 짝이 맞는 오른쪽 괄호를 넣고, 오른쪽 괄호가 들어오면 stack.top에 자신이 있어야만 옳다.
+```
+
