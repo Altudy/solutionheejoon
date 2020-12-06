@@ -146,3 +146,12 @@ LeetCode / c++
   2) 새로운 ListNode* 를 만들어서 새로운 길을 만든다.
   3) 따로 빠져나가는 코드는 없다.
 ```
+
+**22) [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)**
+```
+1. Medium, String, Backtracking
+2. backtracking의 기본 문제
+  1) 함수 back은 인자로 n, 남은 왼쪽 오른쪽 괄호 개수, string
+  2) 규칙 : 현재까지 나온 오른쪽 괄호수는 왼쪽 괄호수를 넘을 수 없다.
+  3) 왼쪽, 오른쪽 괄호를 추가하며 back을 반복한다.
+```
