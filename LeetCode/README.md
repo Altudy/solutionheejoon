@@ -155,3 +155,18 @@ LeetCode / c++
   2) 규칙 : 현재까지 나온 오른쪽 괄호수는 왼쪽 괄호수를 넘을 수 없다.
   3) 왼쪽, 오른쪽 괄호를 추가하며 back을 반복한다.
 ```
+
+**23) [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)**
+```
+1. Hard, Linked List, Divide and Conquer, Heap
+2. priority queue에 모든 list를 넣어 빼면서 정답을 만든다.
+  1) vector에 있는 모든 list를 pq에 넣어서 pq를 만든다.
+  2) pq의 top에는 가장 작은 val의 요소가 들어있다.
+  3) 정답의 가장 처음을 ans, pre에 넣는다.
+  4) 이전에 top에 있던 놈을 뽑아 다음 top을 가리키는 작업을 반복
+  5) 마지막 top은 자기 자신을 가리키게 되므로 next에 nullptr을 넣어준다.
+3. nullptr으로라도 초기화를 해주어야 한다. 일반적인 초기화는 = new ListNode;
+4. pq cmp를 구조체를 만들어서 사용한다.
+5. for(auto list : lists)
+6. best solution
+```
