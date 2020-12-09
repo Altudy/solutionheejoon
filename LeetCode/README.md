@@ -169,4 +169,10 @@ LeetCode / c++
 4. pq cmp를 구조체를 만들어서 사용한다.
 5. for(auto list : lists)
 6. best solution
+  1) vector 양 끝의 list 두 개를 하나로 합친다.
+    a) 두 list중 하나가 null이면 다른 list 한 쪽을 반환
+    b) val를 비교해서 작은 val을 가진 list의 next에 mergeTwoLists(l1->next, l2)에 넣는다.
+    c) mergeTwoLists(l1->next, l2)에서 나오는 것은 다음 두 list 중 작은 놈이다.
+    d) 작은 놈을 return한다.
+  2) 1을 수행하면 vector의 길이는 반이 되고 vector의 길이가 1이될 때까지 수행한다.
 ```
