@@ -176,3 +176,15 @@ LeetCode / c++
     d) 작은 놈을 return한다.
   2) 1을 수행하면 vector의 길이는 반이 되고 vector의 길이가 1이될 때까지 수행한다.
 ```
+
+**32) [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)**
+```
+1. Hard, String, Dynamic Programming, Stack
+2. stack의 top에 유효하기 시작한 곳의 index를 넣으면서 해결
+  1) stack을 만들고 가장 초기 위치를 표시하기 위해 -1을 넣는다.
+  2) 문자가 '('일 때는 그 때의 index를 stack에 넣음
+  3) 문자가 ')'일 때는 stack.pop(); 그러면 유효한 곳의 시작은 이전 '('의 위치가 된다.
+  4) stack이 비어있지 않으면 현재 index와의 거리를 계산해서 result에 더 큰 값을 넣음
+  5) 만약 ')'가 너무 많이 들어와서 stack에 아무것도 없을 경우에만 stack에 ')'의 index를 넣어 유효한 곳의 시작이 된다.
+  6) ')'가 연속되더라도 이전 ')'는 없어지고 새로운 ')'가 쌓이는 방식이므로 ')'로 쌓일수 있는 stack의 높이는 최대 1이다.
+```
