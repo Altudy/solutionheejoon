@@ -188,3 +188,14 @@ LeetCode / c++
   5) 만약 ')'가 너무 많이 들어와서 stack에 아무것도 없을 경우에만 stack에 ')'의 index를 넣어 유효한 곳의 시작이 된다.
   6) ')'가 연속되더라도 이전 ')'는 없어지고 새로운 ')'가 쌓이는 방식이므로 ')'로 쌓일수 있는 stack의 높이는 최대 1이다.
 ```
+
+**33) [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)**
+```
+1. Medium, Array, Binary Search
+2. Brute force 로 해결
+3. best solution
+  1) helper를 재귀로 이용하여 binary search 방식을 사용
+  2) 첫 번째 if문으로 n[mid]가 돌아간 배열의 앞 or 뒤인지 확인. 즉, 돌아가기 전 배열의 시작이 mid의 왼쪽 or 오른쪽인지 확인
+  3) 두 번째 if문으로 target이 mid 왼쪽 or 오른쪽인지 확인.
+  4) 확인된 쪽을 helper에 넣어 return
+```
