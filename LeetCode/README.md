@@ -199,3 +199,19 @@ LeetCode / c++
   3) 두 번째 if문으로 target이 mid 왼쪽 or 오른쪽인지 확인.
   4) 확인된 쪽을 helper에 넣어 return
 ```
+
+**34) [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)**
+```
+1. Medium, Array, Binary Search
+2. 모든 target을 binary search로 찾고 그중 가장 작은 위치와 큰 위치를 찾아서 반환
+3. best solution 1
+  1) lower_bound()와 upper_bound로 target의 시작 index와 target보다 큰 값의 시작 index를 구하여 범위를 구한다.
+4. best solution 2
+  1) sol 1과 비슷하지만 좀 더 깔끔하다.
+  2) lower_bound() 반환값이 last이거나 target을 가리키지 않을 때 upper_bound를 하지 않을 수 있는 장치가 되어 있다.
+  3) 반환을 {-1,-1} 식으로 vector<int>를 반환한다.
+5. iterator에서 begin()을 빼면 몇 번째 인자 인지 알 수 있다.
+6. 내 컴퓨터로 돌렸을 때 3가지 방법 모두 같은 시간이 걸렸다.
+```
+
+
