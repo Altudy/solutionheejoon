@@ -214,4 +214,14 @@ LeetCode / c++
 6. 내 컴퓨터로 돌렸을 때 3가지 방법 모두 같은 시간이 걸렸다.
 ```
 
+**39) [Combination Sum](https://leetcode.com/problems/combination-sum/)**
+```
+1. Medium, Array, Backtracking
+2. best solution
+  1) candidates를 정렬한다.
+  2) backtracking으로 답을 구한다.
+    a) begin을 인자로 받으면서 각 후보자로 시작하는 조합을 구한다.
+    b) combination에 후보자를 넣고 target에 도달하면 그 때의 조합을 ans에 넣는다.
+3. 후보자 넣기 -> backtracking -> 후보자 빼기   => 이 구조를 잘 기억하라.
+```
 
