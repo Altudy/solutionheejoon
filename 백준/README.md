@@ -228,3 +228,15 @@
 2. 일정 구간의 합이 가장 큰 값을 출력한다.
 3. long long int 를 사용하지 않으면 답이 틀리다.
 ```
+
+**N-Queen** - [백준 9663](https://www.acmicpc.net/problem/9663)
+```
+1. lev 3 , backtracking
+2. 알고리즘
+  1) root로부터 첫 번째 row 각 자리에 퀸을 놓으면서 backtracking 동작시킨다.
+  2) col[i] = j 의 의미는 i번째 row j번재 col에 위치한다는 뜻
+  3) row가 주어진 N보다 커지면 ans 증가
+  4) 각 자식들을 넣는데 유망성(promising)을 검사한 후 backtracking을 이어간다.
+3. backtracking
+  1) DFS(depth first search)를 수행하되 유망할 때만 자식 노드로 내려간다.
+```
