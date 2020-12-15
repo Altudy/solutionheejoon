@@ -225,3 +225,17 @@ LeetCode / c++
 3. 후보자 넣기 -> backtracking -> 후보자 빼기   => 이 구조를 잘 기억하라.
 ```
 
+**41) [Permutations](https://leetcode.com/problems/permutations/)**
+```
+1. Medium, Backtracking
+2. my solution
+  1) backtracking의 일반적인 방식으로 해결
+  2) 노드에 가능한 모든 노드를 자식으로 두고 유망성을 검사하여 아래로 내려갈 지 결정
+  3) 끝까지 내려간 것을 결과로 저장
+3. best solution
+  1) 내 방식과 거의 동일하다.
+  2) 차이 1 : 유망성을 검사하는 함수에 value만 넣고 비교
+  3) 차이 2 : 유망성을 검사하는 함수를 inline 함수로 선언
+  4) 차이 3 : temp에 값을 넣고 유망성 검사를 하지 않고 유망성 검사를 통과한 후 값을 넣는다.
+```
+
