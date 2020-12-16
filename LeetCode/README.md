@@ -239,3 +239,13 @@ LeetCode / c++
   4) 차이 3 : temp에 값을 넣고 유망성 검사를 하지 않고 유망성 검사를 통과한 후 값을 넣는다.
 ```
 
+**48) [Rotate Image](https://leetcode.com/problems/Rotate Image/)**
+```
+1. Medium, Array
+2. my solution
+  1) 하나하나 회전해서 새로운 곳에 넣어 저장 후 나중에 copy
+3. best solution
+  1) 새로운 2차원 배열을 생성하지 않고 진행한다.
+  2) 하나의 위치가 4번 돌면 자기 자신으로 돌아온다.
+  3) 2차원 배열의 한 사분면만 하면 나머지가 다 채워진다.
+```
