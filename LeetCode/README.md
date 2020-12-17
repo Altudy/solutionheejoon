@@ -239,7 +239,7 @@ LeetCode / c++
   4) 차이 3 : temp에 값을 넣고 유망성 검사를 하지 않고 유망성 검사를 통과한 후 값을 넣는다.
 ```
 
-**48) [Rotate Image](https://leetcode.com/problems/Rotate Image/)**
+**48) [Rotate Image](https://leetcode.com/problems/rotate-image/)**
 ```
 1. Medium, Array
 2. my solution
@@ -248,4 +248,16 @@ LeetCode / c++
   1) 새로운 2차원 배열을 생성하지 않고 진행한다.
   2) 하나의 위치가 4번 돌면 자기 자신으로 돌아온다.
   3) 2차원 배열의 한 사분면만 하면 나머지가 다 채워진다.
+```
+
+**49) [Group Anagrams](https://leetcode.com/problems/group-anagrams/)**
+```
+1. Medium, Hash Table, String
+2. my solution
+  1) map을 만들었다. 정렬된 문자열이 key이고 value에 원래의 문자열을 넣었다.
+  2) 모든 문자열을 map에 넣은 후 map의 모든 노드의 value를 결과로 반환하였다.
+3. best solution
+  1) 내 코드보다 아주 조금 빠르다.
+  2) map보다 unordered_map이 조금 더 빠르다.
+  3) 내 for문 안의 if문을 map[str].emplace_back(origin); 한줄로 바꿀 수 있다.
 ```
