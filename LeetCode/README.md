@@ -261,3 +261,12 @@ LeetCode / c++
   2) map보다 unordered_map이 조금 더 빠르다.
   3) 내 for문 안의 if문을 map[str].emplace_back(origin); 한줄로 바꿀 수 있다.
 ```
+
+**53) [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)**
+```
+1. Medium, Array, Divide and Conquer, Dynamic Programming
+2. best solution
+  1) 단 하나의 for문으로 O(n)으로 해결한다.
+  2) 처음부터 쭉 누적 값을 더하고 누적값이 0보다 작을 때는 0으로 되돌린다.
+  3) 누적이 음수면 최대 누적값을 구하는데 도움이 되질 않는다.
+```
