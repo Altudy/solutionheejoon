@@ -264,9 +264,22 @@ LeetCode / c++
 
 **53) [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)**
 ```
-1. Medium, Array, Divide and Conquer, Dynamic Programming
+1. Easy, Array, Divide and Conquer, Dynamic Programming
 2. best solution
   1) 단 하나의 for문으로 O(n)으로 해결한다.
   2) 처음부터 쭉 누적 값을 더하고 누적값이 0보다 작을 때는 0으로 되돌린다.
   3) 누적이 음수면 최대 누적값을 구하는데 도움이 되질 않는다.
+```
+
+**55) [Jump Game](https://leetcode.com/problems/jump-game/)**
+```
+1. Medium, Array, Greedy
+2. my solution
+  1) 벡터 처음부터 하나씩 살피면서 최대 어디까지 갈 수 있는 지 체크
+  2) 최대 갈 수 있는 곳이 마지막 위치 이상이 되면 true 반환
+  3) 최대 갈 수 있는 곳이 마지막 위치 이상이 되기 전에 끝이 나면 f
+2. best solution
+  1) 나와 반대의 방향으로 진행(배열 뒤에서 앞으로)
+  2) 해당 index 위치까지 도달할 수 있으면 d=1로 초기화 됨
+  3) 내 코드와 같은 속도
 ```
