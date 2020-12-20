@@ -277,9 +277,30 @@ LeetCode / c++
 2. my solution
   1) 벡터 처음부터 하나씩 살피면서 최대 어디까지 갈 수 있는 지 체크
   2) 최대 갈 수 있는 곳이 마지막 위치 이상이 되면 true 반환
-  3) 최대 갈 수 있는 곳이 마지막 위치 이상이 되기 전에 끝이 나면 f
+  3) 최대 갈 수 있는 곳이 마지막 위치 이상이 되기 전에 끝이 나면 false
 2. best solution
   1) 나와 반대의 방향으로 진행(배열 뒤에서 앞으로)
   2) 해당 index 위치까지 도달할 수 있으면 d=1로 초기화 됨
   3) 내 코드와 같은 속도
+```
+
+**56) [Merge Intervals](https://leetcode.com/problems/merge-intervals/)**
+```
+1. Medium, Array, Sort
+2. my solution
+  1) sort를 진행
+  2) 이전 범위의 끝과 현재 범위의 시작이 겹치는 지 확인
+    a) 겹치면 ans 초기화
+    b) 안겹치면 ans를 anss에 넣고 ans에 현재 범위를 넣는다.
+  3) for문 이후 마지막 ans를 anss에 넣는다.
+2. best solution
+  1) 범위 중 가장 끝 값 max를 구한다.
+  2) sum(int)과 tag(bool)를 max 크기만큼 0으로 채운다.
+  3) 범위의 시작과 끝이 같으면 tag는 true, 다르면 sum[l]++, sum[r]--
+  4) sum의 처음부터 끝까지 누적 값을 넣는다.
+  5) sum이 0일 때는 범위가 포함된 것이 아니므로 while로 left를 증가시켜 건너뛴다.
+    a) 건너뛰더라도 tag가 true면 포함한다.
+  6) left가 max보다 크면 break;
+  7) sum이 양수일 때까지 right를 증가시킨다.
+  8) 범위를 res에 넣고 다음 tag를 false로
 ```
