@@ -304,3 +304,12 @@ LeetCode / c++
   7) sum이 양수일 때까지 right를 증가시킨다.
   8) 범위를 res에 넣고 다음 tag를 false로
 ```
+
+**62) [Unique Paths](https://leetcode.com/problems/unique-paths/)**
+```
+1. Medium, Array, Dynamic Programming
+2. my solution
+  1) 조합(순서에 상관 없는 쌍)을 구하는 문제이지만 조합으로 풀면 시간 초과
+  2) 2차원 배열을 만들고 첫번재 열과 첫번째 행은 1로 채운다.
+  3) map[i][j] = map[i-1][j] + map[i][j-1] 방식으로 채운다.
+```
