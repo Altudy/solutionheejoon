@@ -313,3 +313,12 @@ LeetCode / c++
   2) 2차원 배열을 만들고 첫번재 열과 첫번째 행은 1로 채운다.
   3) map[i][j] = map[i-1][j] + map[i][j-1] 방식으로 채운다.
 ```
+
+**64) [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)**
+```
+1. Medium, Array, Dynamic Programming
+2. my solution
+  1) 62번 문제와 같은 방법
+  2) map의 의미는 해당 위치까지의 가장 작은 합의 경로이다.
+  3) map 배열에서 왼쪽 혹은 위쪽에서 합이 작은 경로를 통해 도착하도록 한다.
+```
