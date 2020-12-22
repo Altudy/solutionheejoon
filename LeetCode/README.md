@@ -322,3 +322,11 @@ LeetCode / c++
   2) map의 의미는 해당 위치까지의 가장 작은 합의 경로이다.
   3) map 배열에서 왼쪽 혹은 위쪽에서 합이 작은 경로를 통해 도착하도록 한다.
 ```
+
+**70) [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)**
+```
+1. Easy, Dynamic Programming
+2. my solution
+  1) 기본적인 DP문제, DP문제라는 것을 파악할 줄 아는 것이 중요하다.
+  2) 피보나치 수열
+```
