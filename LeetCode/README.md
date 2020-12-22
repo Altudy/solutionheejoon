@@ -67,6 +67,39 @@ LeetCode / c++
   2) 이전 정보를 사용하면 O(n^2) + 팰린드롬 검사 O(1)
 ```
 
+**10) [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)**
+```
+1. Hard, String, DP, Backtracking
+2. my solution
+  1) backtracking 방식으로 가능한 경우를 자식 노드로 만들어 살펴본다.
+  2) 패턴 string을 훑어보며 '.' '*'를 찾고 type에 저장한다.
+    a) type 0 : 일반 수
+    b) type 1 : 현재 위치가 '.'
+    c) type 2 : 다음 위치가 '*'
+    d) type 3 : 다음 위치가 '*' 이며 현 위치가 '.'
+  3) 두 string을 가리키는 두 개의 포인터를 움직이며 진행한다.
+  4) 두 포인터가 동시에 마지막+1 위치에 도달했을 때 true를 반환
+  5) index 범위를 넘었을 때를 방지하기 위한 탈출코드는 case안에 넣는다. 그렇지 않으면 a / ab*c*d* 와 같은 것을 해결하지 못한다.
+  6) type 별로 진행
+    a) type 1 : 범위 확인 후 바로 다음 노드로 넘어간다.
+    b) type 2 : 몇 번을 건너뛸지 모르므로 다 해본다. 5)의 경우때문에 늦게 범위를 계산한다. s[i]==p[pp]이어야 다음 노드를 또 검사할 수 있다.
+    c) type 3 : type 2와 동일하고 s[i]==p[pp]만 검사하지 않고 넘어간다.
+    d) default : type 0으로 비교하고 같으면 다음 노드로 넘어가고 다르면 false 반환
+  7) 새로운 함수를 만들 때 인자의 주소&를 넘겨서 메모리를 절약하는 것을 잊지 말자.
+3. best solution
+  1) DP 중 어려운 편
+  2) row=s.length()+1, col=p.length()+1 사이즈의 bool형 2차원 배열을 생성한다.
+  3) *붙은 수가 연속으로 있으면 처음부터 반복이 일어날 수 있으므로 OPT 검사를 수행한다.
+    a) 이걸 하지 않으면 처음부터 반복이 일어나는 것들을 캐치할 수 없다.
+  4) 2중 for문으로 하나씩 살핀다. OPT[i+1][j+1]은 현재 s[i]와 p[j]가 일치할 수 있을 때 true를 갖는다.
+    a) p[j]가 '.'이거나 s[i]이면 일치하고 다음으로 넘어갈 수 있다. 따라서 OPT[i+1][j+1]=OPT[i][j]
+    b) p[j]가 '*'일 때, p[j-1]이 s[i]와 다르고 '.'도 아니라면 *는 0번 반복을 해야만 한다. 그래서 OPT[i + 1][j + 1] = OPT[i + 1][j - 1]
+    c) p[j]가 '*'일 때, 위의 조건이 아니라면 OPT[i+1][j+1]은 셋 중 하나여야 한다.
+      - OPT[i + 1][j] 한 번만 반복
+      - OPT[i][j + 1] 같은 것을 계속 반복 
+      - OPT[i + 1][j - 1] 0번 반복 
+```
+
 **11) [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)**
 ```
 1. Medium, Array, Two pointers
