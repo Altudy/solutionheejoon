@@ -258,7 +258,20 @@ LeetCode / c++
 3. 후보자 넣기 -> backtracking -> 후보자 빼기   => 이 구조를 잘 기억하라.
 ```
 
-**41) [Permutations](https://leetcode.com/problems/permutations/)**
+**41) [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)**
+```
+1. Hard, Array
+2. my solution
+  1) nums를 하나씩 보고 301 이하의 숫자면 chk에 true로 표시
+  2) chk를 살펴보면서 가장 먼저 false가 나온 인자를 반환
+3. best solution
+  1) nums를 정렬 (sort)
+  2) 앞에서부터 하나씩 보면서 a와 같으면 a를 증가시킨다.
+  3) 빈 부분이 있다면 a는 더이상 증가되지 않고 그대로 반환됨
+  4) 시간복잡도는 내 방법이 더 좋다.
+```
+
+**46) [Permutations](https://leetcode.com/problems/permutations/)**
 ```
 1. Medium, Backtracking
 2. my solution
