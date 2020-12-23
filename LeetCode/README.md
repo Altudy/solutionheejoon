@@ -271,6 +271,23 @@ LeetCode / c++
   4) 시간복잡도는 내 방법이 더 좋다.
 ```
 
+**42) [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)**
+```
+1. Hard, Array, Two Pointers, Stack
+2. my solution
+  1) 높이와 index를 pair로 만들어 priority_queue에 넣는다.
+  2) 같은 높이를 가진 원소를 모두 꺼내서 그 기둥들의 최소, 최대 idx를 구한다.
+  3) 이전에 검사하지 않은 범위 내에서 더 낮은 기둥과의 차이를 ans에 더해준다.
+3. best solution
+  1) 역방향으로 height를 보면서 maxRight를 채운다.
+    a) maxRight : idx에서 오른쪽을 봤을 때 가장 높은 기둥
+  2) 정방항으로 height를 보면서 total을 채운다.
+    a) maxH : idx에서 왼쪽을 봤을 때 가장 높은 기둥
+    b) 물의 높이 : 왼쪽에서 볼때의 최대와 오른쪽에서 볼 때의 최대 중 더 작은 값
+    c) 그 최대값이 기둥의 높이와 같다면 물의 높이는 0
+    d) 현재가 이전보다 높으면 total에 더해지는 것이 없음
+```
+
 **46) [Permutations](https://leetcode.com/problems/permutations/)**
 ```
 1. Medium, Backtracking
