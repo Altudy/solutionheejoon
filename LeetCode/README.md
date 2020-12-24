@@ -288,6 +288,16 @@ LeetCode / c++
     d) 현재가 이전보다 높으면 total에 더해지는 것이 없음
 ```
 
+**45) [Jump Game II](https://leetcode.com/problems/jump-game-ii/)**
+```
+1. Hard, Array, Greedy
+2. DP로 풀면 시간 초과였다.
+2. my solution
+  1) 범위(idx ~ end)를 정하고 그 범위를 for문으로 훑으면서 가장 멀리갈 수 있는 끝 위치를 next에 저장하고 마지막에 end로 올겨준다.
+  2) 가장 멀리갈 수 있는 위치의 idx를 저장한다.
+  3) 이 for문이 한 번 진행될 때 ans++
+```
+
 **46) [Permutations](https://leetcode.com/problems/permutations/)**
 ```
 1. Medium, Backtracking
