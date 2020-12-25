@@ -403,3 +403,11 @@ LeetCode / c++
   1) 기본적인 DP문제, DP문제라는 것을 파악할 줄 아는 것이 중요하다.
   2) 피보나치 수열
 ```
+
+**75) [Sort Colors](https://leetcode.com/problems/sort-colors/)**
+```
+1. Medium, Array, Two Pointers, Sort
+2. my solution
+  1) sort를 직접 구현
+  2) 0, 1, 2의 개수를 count하고 nums에 넣는다.
+```
