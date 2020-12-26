@@ -404,6 +404,15 @@ LeetCode / c++
   2) 피보나치 수열
 ```
 
+**72) [Edit Distance](https://leetcode.com/problems/edit-distance/)**
+```
+1. Hard, String, Dynamic Programming
+2. my solution
+  1) 이차원벡터 dp의 의미는 dp[i][j]까지의 최소 edit distance이다.
+  2) word1[i]==word2[i]라면 추가되는 작업이 없으므로 dp[i][j]=dp[i-1][j-1]
+  3) 다르다면 삭제할 수 있으므로 dp[i][j-1] or dp[i-1][j], 대체할 수 있으므로 dp[i-1][j-1]에 작업량 1을 더한다.
+```
+
 **75) [Sort Colors](https://leetcode.com/problems/sort-colors/)**
 ```
 1. Medium, Array, Two Pointers, Sort
