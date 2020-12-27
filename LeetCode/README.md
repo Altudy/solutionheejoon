@@ -420,3 +420,35 @@ LeetCode / c++
   1) sort를 직접 구현
   2) 0, 1, 2의 개수를 count하고 nums에 넣는다.
 ```
+
+**1704) [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)**
+```
+1. Easy, String
+2. my solution
+  1) string을 넣으면 모음의 개수를 반환하는 함수를 생성
+  2) 인자로 받은 string을 반으로 나누어 모음의 개수를 비교
+```
+
+**1705) [Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples/)**
+```
+1. Medium, Heap, Greedy
+2. my solution
+  1) 사과를 받으면 언제까지 먹을 수 있는 사과가 몇 개인지 pq에 넣는다.
+    a) {언제까지 먹을 수 있는지, 남은 사과가 몇 개인지}
+    b) 날짜가 빠른 순으로 정렬된다.
+  2) 그리고 먹을 수 있는 사과가 있는지 pq의 top을 살펴본다.
+    a) 날짜가 지났으면 pop()
+    b) 안지났으면 pop()한 후 사과를 하나 빼고 push (사과가 0개면 넣지 않는다.)
+3. best solution
+  1) 
+```
+
+**1706) [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/)**
+```
+1. Medium, Dynamic Programming
+2. my solution
+  1) 공 하나씩 떨어뜨린다.
+  2) 끝까지 도달하면 그 공 index에 마지막에 몇번재 col에서 떨어졌는지 입력
+  3) '\'일 때 오른쪽이 '/'이거나 현재 col이 오른쪽 끝이면 break하여 다음 공을 확인
+  4) '/'일 때 왼쪽이 '\'이거나 현재 col이 왼쪽 끝이면 break하여 다음 공을 확인
+```
