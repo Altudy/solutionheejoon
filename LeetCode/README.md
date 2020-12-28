@@ -421,6 +421,17 @@ LeetCode / c++
   2) 0, 1, 2의 개수를 count하고 nums에 넣는다.
 ```
 
+**1047) [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)**
+```
+1. Easy, Strack
+2. my solution
+  1) string ans에 S를 하나씩 넣는다.
+  2) 만일 ans의 top이 넣으려는 S와 같다면 top을 pop
+3. best solution
+  1) 동일한 방법
+  2) idx 변수를 쓰지 않고 ans.back을 사용
+```
+
 **1704) [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)**
 ```
 1. Easy, String
