@@ -432,6 +432,22 @@ LeetCode / c++
   2) idx 변수를 쓰지 않고 ans.back을 사용
 ```
 
+**1209) [Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)**
+```
+1. Medium, Strack
+2. my solution
+  1) string을 ans와 벡터 count를 stack으로 활용한다.
+  2) 인자로 받은 string s를 하나씩 보고 ans를 채운다. (1047번과 동일)
+  3) count의 해당 idx에 지금까지 몇 번 중복되었는지 표시한다.
+  4) 중복횟수가 인자로 받은 k와 같아질 때, ans에서 중복되는 부분 문자열을 삭제하고 idx를 뒤로 돌린다.
+3. best solution
+  1) stack counts를 사용하고 반환할 string은 인자로 받은 string을 사용한다.
+  2) j는 답을 만드는데 쓰이는 index이다.
+  3) s[j]에 s[i]를 넣고 둘이 다르거나 j==0이면 counts에 1을 쌓는다.
+  4) 둘이 같다면 counts를 증가시키면서 k와 비교해본다.
+  5) k와 같다면 count.top을 pop 하고 j를 k만큼 감소시킨다.
+```
+
 **1704) [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)**
 ```
 1. Easy, String
@@ -451,7 +467,14 @@ LeetCode / c++
     a) 날짜가 지났으면 pop()
     b) 안지났으면 pop()한 후 사과를 하나 빼고 push (사과가 0개면 넣지 않는다.)
 3. best solution
-  1) 
+  0) p는 포인터
+  1) for문을 last만큼 돌리는 데 last는 for문안에서 사과가 남는 마지막 날에 맞춰 최신화된다.
+  2) d가 apples의 길이보다 작을 때 if문 실행
+    a) 사과 기한일을 ne에 저장
+    b) dp[기한일]에 사과의 개수를 더한다.
+    c) ne가 p보다 작으면 p=ne, ne가 last보다 크면 last=ne
+  3) p가 last보다 작을 때, dp[p]가 0이고(p 날짜에 끝나는 먹을 사과가 없고) p<=d(오늘 이전에 끝난 사과)라면 p를 증가
+  4) dp[p]가 0이 아니라면 먹을 사과가 있으므로 먹을 사과를 줄이고(dp[p]--) cnt++
 ```
 
 **1706) [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/)**
