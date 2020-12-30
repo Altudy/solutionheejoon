@@ -421,6 +421,24 @@ LeetCode / c++
   2) 0, 1, 2의 개수를 count하고 nums에 넣는다.
 ```
 
+**394) [Decode String](https://leetcode.com/problems/decode-string/)**
+```
+1. Medium, Stack, DFS
+2. my solution
+  1) vector로 2개의 stack을 사용하였다.
+  2) 주어진 string을 하나씩 살펴본다.
+  3) 숫자일 때, num을 최신화시킨다. 이전에도 숫자였으면 이전값*10 에 더한다.
+  4) 여는 괄호일 때, 숫자가 끝났으므로 repeat stack에 넣는다. wasnum은 false가 되고 string stack에 ""를 push하여 새로운 시작을 한다.
+  5) 닫는 괄호일 때, stack의 마지막을 pop하여 repeat 수만큼 뒤에 붙인다.
+  6) 문자일 때, stack의 string 뒤에 쌓는다.
+3. best solution
+  1) 재귀를 사용하였고 my sol과 속도는 같다.
+  2) 숫자가 나올때까지 char를 더해간다.
+  3) 숫자가 나오면 반복되는 총 횟수를 찾기 위해 while을 돈다.
+  4) 숫자가 끝나면 괄호를 건너띄기 위해 i++를 하고 다음 위치부터 다시 decode를 한다.
+  5) decode로 나온 문자열을 ret에 반복하여 더해준다.
+```
+
 **1047) [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)**
 ```
 1. Easy, Strack
