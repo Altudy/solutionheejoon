@@ -421,6 +421,29 @@ LeetCode / c++
   2) 0, 1, 2의 개수를 count하고 nums에 넣는다.
 ```
 
+**227) [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)**
+```
+1. Medium, String, Stack
+2. my solution
+  1) stack을 사용하여 풀었다.
+  2) 문자가 space ' ' 가 나오면 pass
+  3) 문자가 연산자라면 sign에 저장한다.
+  4) 문자가 숫자라면 findnum 함수로 다음 연산자까지의 진짜 숫자를 구한다.
+    a) num = num*10 - '0' + s[i]; 에서 num이 int의 최대값일 때, '0'이 s[i]보다 뒤에 있다면 int의 범위를 넘어가서 오류가 발생한다.
+    b) 마지막에 i--를 통해 마지막 숫자를 가리키도록 한다.
+  5) 연산자에 맞게 num을 처리한다.
+    a) '+' or '-' 라면 stack에 쌓고 '*' or '/' 라면 stack의 top과 연산한다.
+  6) for문이 끝났을 때 stack의 모든 수를 더하여 반환한다.
+3. best solution
+  1) 현재 문자를 저장하고 숫자라면 num을 계산한다.
+  2) 문자가 나오거나, space가 아니거나, index가 마지막이라면 if문 실행
+    a) +, -일 때, result에 lastNum을 더하고 lastNum에 현재 숫자를 넣는다.
+    b) *, /일 때, lastNum에 현재 숫자를 곱하거나 나눈다.
+    c) sign을 최신화하고 현재 숫자를 0으로 최신화한다.
+  3) for문이 끝나고 result에 lastNum을 더한다.
+  4) stack만큼 더 안돌아도 되서 더 빠르고, stack을 쌓지 않아서 메모리도 더 절약할 수 있다.
+```
+
 **394) [Decode String](https://leetcode.com/problems/decode-string/)**
 ```
 1. Medium, Stack, DFS
