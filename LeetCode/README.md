@@ -444,6 +444,18 @@ LeetCode / c++
   4) stack만큼 더 안돌아도 되서 더 빠르고, stack을 쌓지 않아서 메모리도 더 절약할 수 있다.
 ```
 
+**387) [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)**
+```
+1. Easy, Hash Table, String
+2. my solution
+  1) string의 모든 글자를 map에 넣으며 수를 count한다.
+  2) 두번째 for문에서 map에서 해당 글자의 수를 확인하며 index를 return
+3. my solution 2
+  1) map보다 더 빠르게 동작한다.
+  2) 26길이의 vector에서 알파벳의 수를 count한다.
+  3) 두번째 for문에서 알파벳의 수가 1이면 해당 index를 return
+```
+
 **394) [Decode String](https://leetcode.com/problems/decode-string/)**
 ```
 1. Medium, Stack, DFS
