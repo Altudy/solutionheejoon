@@ -421,6 +421,16 @@ LeetCode / c++
   2) 0, 1, 2의 개수를 count하고 nums에 넣는다.
 ```
 
+**205) [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)**
+```
+1. Easy, Hash Table
+2. my solution
+  1) 2개의 hash map을 만들고 두 string이 서로를 value로 같는 key를 넣는다.
+  2) 만약 이전에 나온 key가 다른 value를 갖는다면 false를 return
+3. best solution
+  1) vector map을 2개를 만들고 그 map에 값이 있을 때 이전에 넣은 값과 다르면 false를 return
+```
+
 **227) [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)**
 ```
 1. Medium, String, Stack
