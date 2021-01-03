@@ -56,6 +56,16 @@ AtCoder / c++
 4. ll = ll * ll 로 바꾸니 에러가 사라졌다.
 ```
 
+[D - Choose Me](https://atcoder.jp/contests/abc187/tasks/abc187_d)
+
+```
+1. Medium, Greedy
+2. 계속 틀린 이유는 범위. int -> long long int로 바꾸니까 바로 맞았다.
+3. 정렬 방법 : 하나의 연설물을 쓸 때 변하게 되는 상대와 나의 표 득표수.
+  a) 즉, 내가 하나의 연설문을 쓰면 a+b의 득표수가 올라가고 상대방은 a의 득표수가 내려가므로 차이는 2*a + b
+4. 하나도 연설문을 쓰지 않았을 때부터 시작하여 큰 득표수 차이가 나는 것부터 하나씩 적용해간다.
+```
+
 [E - Crested Ibis vs Monster](https://atcoder.jp/contests/abc153/tasks/abc153_e)
 
 ```
