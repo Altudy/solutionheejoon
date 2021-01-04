@@ -2,7 +2,6 @@ class RandomizedSet {
 public:
     unordered_map<int, int> m;
     vector<int> vec;
-//    srand((unsigned int)time(0));
 
     RandomizedSet() {
     }
@@ -25,14 +24,6 @@ public:
         vec[m[last]] = last;
         vec.pop_back();
         m.erase(val);
-        return true;
-        
-        
-        int idx = m[val];
-        vec[idx] = vec.back();
-        vec.pop_back();
-        m.erase(val);
-        m[vec[idx]] = idx;
         return true;
     }
     
