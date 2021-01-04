@@ -454,6 +454,23 @@ LeetCode / c++
   4) stack만큼 더 안돌아도 되서 더 빠르고, stack을 쌓지 않아서 메모리도 더 절약할 수 있다.
 ```
 
+**380) [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)**
+```
+1. Medium, Array, Hash Table, Design
+2. my solution
+  1) map과 vector를 이용한다. map은 저장할 값을 key로 두고 그 key에 해당하는 vec에서의 index를 value로 갖는다.
+  2) insert
+    a) 이미 수가 있으면 false를 return
+    b) 수가 없다면 vector 뒤에 추가하고 map에 index와 함께 넣는다.
+  3) remove
+    a) 이미 수가 없다면 false를 return
+    b) 수가 있다면 vector의 마지막 값을 가져와서 map에서 index 값을 바꿔준다.
+    c) vector에서 삭제할 값의 위치에 마지막 값을 넣고 마지막 값을 버린다.
+    d) map에서도 수를 삭제하고 true를 반환
+  4) get random
+    a) vector size의 랜덤 index를 구하고 return
+```
+
 **387) [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)**
 ```
 1. Easy, Hash Table, String
