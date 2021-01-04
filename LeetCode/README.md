@@ -484,6 +484,16 @@ LeetCode / c++
   5) decode로 나온 문자열을 ret에 반복하여 더해준다.
 ```
 
+**692) [Decode String](https://leetcode.com/problems/decode-string/)**
+```
+1. Medium, Hash Table, Heap, Trie
+2. my solution
+  1) 모든 word를 map에 넣으면서 그 수를 count한다.
+  2) map의 모든 요소를 vector에 넣고 정렬한다.
+  3) 정렬된 vector에서 상위 k개의 요소만 따로 vector로 만들어서 반환한다.
+3. map에 해당하는 key가 없더라도 map[key]++ 하면 1부터 시작된다.
+```
+
 **1047) [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)**
 ```
 1. Easy, Strack
