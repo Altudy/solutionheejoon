@@ -13,11 +13,14 @@ programmers / c++
 [가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060)
 
 ```
-1. 2020 카카오 공채. from [here](https://yomyom0824.tistory.com/m/58?category=1040570)
+1. 2020 카카오 공채.
 2. 트라이(trie) 자료구조를 사용한다.
 3. 노드에 map을 추가해서 길이가 L인 문자열이 몇 개인지 표시한다.
 4. 아직 완전히 습득하지 못했으니 나중에 꼭 재검.
 ```
+- [참고 링크](https://yomyom0824.tistory.com/m/58?category=1040570)
+
+
 
 [비밀 지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
 
