@@ -106,3 +106,26 @@ programmers / c++
     d) 이동한 방향과 이전의 방향을 고려하여 cost와 변경된 방향을 최신화한다.
     e) 새로운 곳이거나, 더 저렴하거나 같은 비용이라면 살펴볼 필요가 있으므로 queue에 넣는다.
 ```
+
+[[2020 카카오 인턴십] 동굴 탐험](https://programmers.co.kr/learn/courses/30/lessons/67260)
+
+```
+1. lev4 queue, Breadth First Search
+2. my solution
+  1) 필요한 전역 변수들을 선언한다.
+    a) edge : 해당 노드와 연결된 노드들을 저장한다.
+    b) need : 해당 노드를 가기 위해서 꼭 들려야하는 노드를 저장한다.
+    c) save : need의 노드를 들리게 되면, 이전에 저장한 위치에서 다시 시작하기 위해서 저장된 노드들.
+    d) visited : 방문한 노드를 체크
+  2) path를 보고 edge를 채운다.
+  3) order를 보고 need를 채운다.
+  4) bfs() 함수 실행
+  5) queue에 0을 넣고, 혹여나 0의 need가 있으면 함수를 종료한다.
+  6) queue가 비어있을 때까지 while
+    a) queue에서 하나를 뽑아 이미 방문한 곳이라면 다음 것을 뽑는다.
+    b) 처음 0은 이 이후로 true여야 하므로 visited[0] =true
+    c) need를 보고 들려야만 하는 노드에 들리지 않았다면 해당 노드를 일단 save에 저장한다.
+    d) 통과한다면 node를 들렸다고 visited에 표시한다.
+    e) 만약 자신때문에 진행을 멈춘 노드가 있는지 need를 보고, 있으면 queue에 넣는다.
+    f) 연결된 edge들을 모두 queue에 넣는다.
+```
