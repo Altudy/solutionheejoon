@@ -90,3 +90,19 @@ programmers / c++
 3. map을 처음에 clear한 후 map의 크기로 보석 종류의 개수를 계산할 수 있다.
 4. 즉, 보석의 개수가 0개가 되면 map에서 제거하는 방법을 사용하여 변수k를 대체한다.
 ```
+
+[[2020 카카오 인턴십] 경주로 건설](https://programmers.co.kr/learn/courses/30/lessons/67259)
+
+```
+1. lev3, queue, Breadth First Search, Struct
+2. my solution
+  1) 좌표, 비용, 방향을 갖는 struct를 정의한다.
+  2) up, right, down, left로 움직이기 위한 배열을 만든다.
+  3) queue를 만들고 살펴볼만한 좌표의 자동차만 넣는다.
+  4) queue가 비어있을 때까지 while문
+    a) 차의 좌표가 마지막까지 왔다면 ans를 최신화
+    b) 움직이기 위한 배열을 이용하여 4번의 for문을 돈다.
+    c) 좌표를 이동시키고 범위를 벗어났는지, 벽으로 왔는지 확인한다.
+    d) 이동한 방향과 이전의 방향을 고려하여 cost와 변경된 방향을 최신화한다.
+    e) 새로운 곳이거나, 더 저렴하거나 같은 비용이라면 살펴볼 필요가 있으므로 queue에 넣는다.
+```
