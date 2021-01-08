@@ -501,6 +501,18 @@ LeetCode / c++
   5) decode로 나온 문자열을 ret에 반복하여 더해준다.
 ```
 
+**560) [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)**
+```
+1. Medium, Array, Hash Table
+2. best solution
+  1) 처음부터 해당 index까지의 누적합을 구한다.
+  2) 누적 합 - 누적 합을 하면 구간의 합이 된다. 그 구간의 합이 k가 될 때를 활용한다.
+  3) 구간의 합이 처음부터 시작할 수 있으니 합이 0인 것을 넣는다.
+  4) map<int,int> 는 { 처음부터 누적합, 그 합의 개수} 이다.
+  5) 누적 합 a, 누적합 b 의 차이가 k가 되어야 하므로 k = a-b, k-a = -b이다.
+  6) 따라서 map에서 찾을 때 k-a로 찾기 위해서 -b를 넣는다.
+```
+
 **692) [Decode String](https://leetcode.com/problems/decode-string/)**
 ```
 1. Medium, Hash Table, Heap, Trie
