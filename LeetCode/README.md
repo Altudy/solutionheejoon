@@ -523,6 +523,15 @@ LeetCode / c++
 3. map에 해당하는 key가 없더라도 map[key]++ 하면 1부터 시작된다.
 ```
 
+**939) [Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/)**
+```
+1. Medium, Hash Table, Hash Set
+2. my solution
+  1) 모든 좌표를 map에 넣는다. map.first에는 좌표의 x위치가, map.second에는 좌표의 y좌표가 set 안으로 들어가있다.
+  2) 두 점을 골라서 마주보는 좌표라면 그에 대응하는 좌표가 있는지 확인한다.
+  3) 만약 있다면 사각형의 크기를 구하고 더 작은 크기를 저장한다.
+```
+
 **1047) [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)**
 ```
 1. Easy, Strack
