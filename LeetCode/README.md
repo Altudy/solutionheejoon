@@ -523,6 +523,15 @@ LeetCode / c++
 3. map에 해당하는 key가 없더라도 map[key]++ 하면 1부터 시작된다.
 ```
 
+**746) [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)**
+```
+1. Easy, Array, DP
+2. my solution
+  1) 해당 계단을 올라갈 때까지의 비용을 저장한다.
+  2) dp[i] = cost(dp[i-2]+cost[i-2], dp[i-1]+cost[i-1])
+3. time complexity : O(n), space complexity : O(1)
+```
+
 **939) [Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/)**
 ```
 1. Medium, Hash Table, Hash Set
