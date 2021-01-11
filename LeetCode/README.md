@@ -454,6 +454,15 @@ LeetCode / c++
   4) stack만큼 더 안돌아도 되서 더 빠르고, stack을 쌓지 않아서 메모리도 더 절약할 수 있다.
 ```
 
+**322) [Coin Change](https://leetcode.com/problems/coin-change/)**
+```
+1. Medium, DP
+2. my solution
+  1) dp에 가장 짧게 올 수 있는 동전의 개수를 넣는다.
+  2) 처음에 2e9로 채워서 마지막에도 2e9면 -1을 반환한다.
+3. time complexity : O(k*n), space complexity : O(1)
+```
+
 **380) [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)**
 ```
 1. Medium, Array, Hash Table, Design
