@@ -421,6 +421,23 @@ LeetCode / c++
   2) 0, 1, 2의 개수를 count하고 nums에 넣는다.
 ```
 
+**91) [Decode Ways](https://leetcode.com/problems/decode-ways/)**
+```
+1. Medium, String, DP
+2. my solution
+  1) 뒤에서부터 앞으로 오면서 dp를 채운다.
+  2) 마지막 두 개를 먼저 채우고 for문으로 들어간다.
+  3) 0이 나오면 다음을 살핀다.
+  4) 1이나 2가 나오면 두자리수가 될 수 있는 지 살피고, 가능하다면 이전값과 전전값을 더한다.
+  5) 가능하지 않다면 이전 값을 가져온다.
+3. best solution
+  1) 앞에서부터 뒤로 가면서 dp를 채운다.
+  2) 0이 나오면 이전 값을 보고 전전 값을 넣는다.
+  3) 이전 값이 1 또는 2일 때 현재 값과 비교하여 26이하이면 이전값과 전전값을 더한다.
+  4) 그렇지 않다면 이전값을 넣는다.
+4. 몇 가지 방법이 있는가 라는 질문은 DP로 풀 수 있는 경우가 많다.
+```
+
 **205) [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)**
 ```
 1. Easy, Hash Table
