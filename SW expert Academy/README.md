@@ -43,3 +43,17 @@ SW expert Academy / c++
 2. 공식과 예외만 처리하면 쉽다.
 3. endl 말고 "\n" 사용하여 통과했다.
 ```
+
+[4259 제곱수의 합 계산하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWLL3yk6ALUDFAUW)
+
+```
+1. 구현, 큰수
+2. my solution
+  1) 하나의 수를 받으면 solution에 넣는다.
+  2) 지수 expo와 지수 아래의 수 a를 구한다.
+  3) temp[0]=1 로 시작해서 각 자리에 a를 곱한다.
+  4) 각 자리에서 10을 넘어가는 carry를 이후 index에 더해주고 자신은 일의 자리만 남긴다.
+  5) expo만큼 위를 반복한 후 temp의 각 자리의 수를 sum 각 자리에 더한다. 동시에 carry도 처리한다.
+  6) 하나의 case에서 주어진 수를 모두 처리하면 앞의 0을 제외하고 출력한다.
+3. 999^9는 long long int의 범위를 넘어서기 때문에 새로운 방식을 사용해야한다.
+```
