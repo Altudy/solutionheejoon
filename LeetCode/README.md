@@ -415,6 +415,20 @@ LeetCode / c++
 
 **75) [Sort Colors](https://leetcode.com/problems/sort-colors/)**
 ```
+1. Medium, Array, Backtracking
+2. best solution
+  1) 2차원 배열에서 첫 문자가 같은 지점부터 find를 시작한다.
+  2) 인자로는 word의 어디를 검사할 차례인지 나타내는 idx, 좌표 r,c가 있다.
+  3) 마지막까지 검사가 잘 이루어졌다면 true반환
+  4) 범위가 좌표를 넘어갔다면 false 반환
+  5) 문자가 다르다면 false 반환
+  6) 들렸다는 의미로 해당 문자를 space로 대체한다.
+  7) 4방향으로 검사하고 하나라도 성공을 했으면 true 반환
+  8) 그렇지 않으면 바꾼 문자를 원래대로 돌려놓고 false 반환
+```
+
+**79) [Word Search](https://leetcode.com/problems/word-search/)**
+```
 1. Medium, Array, Two Pointers, Sort
 2. my solution
   1) sort를 직접 구현
