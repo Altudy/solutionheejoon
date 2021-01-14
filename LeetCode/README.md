@@ -427,6 +427,26 @@ LeetCode / c++
   8) 그렇지 않으면 바꾼 문자를 원래대로 돌려놓고 false 반환
 ```
 
+**78) [Subsets](https://leetcode.com/problems/subsets/)**
+```
+1. Medium, Array, Backtracking, Bit Manipulation
+2. best solution 1 - backtracking
+  1) 모든 수는 unique하다.
+  2) backtracking 함수에서 입력으로 받은 index의 수 이후를 하나씩 넣어본다.
+  3) 넣은 후 backtracking이 끝나면 pop_back 수행
+3. best solution 2 - iterative
+  1) nums의 수를 하나씩 넣는다.
+  2) 넣기 전에 subs의 모든 요소를 하나씩 복제한다.
+  3) 그 후 nums의 수를 넣는다.
+4. best solution 3 - Bit Manipulation
+  1) nums의 각 수를 넣을지 말지를 정하는 것으로, 2진법 bit연산과 같은 맥락이다.
+  2) 즉, nums의 수가 3개일 때, 000 001 010 011 100 101 110 111 총 8가지 방법이 있다.
+  3) 그래서 subs의 전체 요소의 수는 2^n 이다.
+  4) subs를 하나씩 살피면서 nums의 어떤 숫자가 들어가야하는 지, 1로 표시되어 있는지 확인한다.
+  5) i >> j 를 하면 101 >> 2 => 1 이 되므로 해당 자리수가 1인지 확인할 수 있다.
+  6) 1일 때 sub[i]에 수를 넣는다.
+```
+
 **79) [Word Search](https://leetcode.com/problems/word-search/)**
 ```
 1. Medium, Array, Two Pointers, Sort
