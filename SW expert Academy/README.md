@@ -1,7 +1,7 @@
 SW expert Academy / c++
 ------------------
 
-[8856 북북서](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AW1BsILa2X0DFARC&categoryId=AW1BsILa2X0DFARC&categoryType=CODE&&&)
+[8856. 북북서](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AW1BsILa2X0DFARC&categoryId=AW1BsILa2X0DFARC&categoryType=CODE&&&)
 
 ```
 1. 기약분수로 표현하기 위해 분모와 분자를 따로 계산한다.
@@ -10,7 +10,7 @@ SW expert Academy / c++
 4. '북', '서', '북서', '서북' 을 if문으로 예외처리한다.
 ```
 
-[1768 숫자야구게임](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4su3xKXFUDFAUf)
+[1768. 숫자야구게임](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4su3xKXFUDFAUf)
 
 ```
 1. from leechanwoo
@@ -20,7 +20,7 @@ SW expert Academy / c++
 5. query()로 결과를 받았을 때 정답을 배열에 있다고 가정하고 fake_query로 같은 결과가 나오는 것만 살린다. -> 핵심. 후보를 제거하는 방법.
 ```
 
-[9229 한빈이와 Spot Mart](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AW8Wj7cqbY0DFAXN)
+[9229. 한빈이와 Spot Mart](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AW8Wj7cqbY0DFAXN)
 
 ```
 1. greedy algorithm
@@ -28,7 +28,7 @@ SW expert Academy / c++
 3. index를 잘 정해주어야 한다.
 ```
 
-[8016 홀수 피라미드](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWvzGUKKPVwDFASy)
+[8016. 홀수 피라미드](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWvzGUKKPVwDFASy)
 
 ```
 1. 수학
@@ -36,7 +36,7 @@ SW expert Academy / c++
 3. pow() 함수는 double형을 반환하기에 e^ 형태로 값이 출력되므로 주의하라.
 ```
 
-[8771 덧셈 문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AW3R9ga6F9wDFATy&categoryId=AW3R9ga6F9wDFATy&categoryType=CODE&&&&&&)
+[8771. 덧셈 문제](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AW3R9ga6F9wDFATy&categoryId=AW3R9ga6F9wDFATy&categoryType=CODE&&&&&&)
 
 ```
 1. 시간 줄이는 문제
@@ -44,7 +44,7 @@ SW expert Academy / c++
 3. endl 말고 "\n" 사용하여 통과했다.
 ```
 
-[4259 제곱수의 합 계산하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWLL3yk6ALUDFAUW)
+[4259. 제곱수의 합 계산하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWLL3yk6ALUDFAUW)
 
 ```
 1. 구현, 큰수
