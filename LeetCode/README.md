@@ -427,6 +427,31 @@ LeetCode / c++
   8) 그렇지 않으면 바꾼 문자를 원래대로 돌려놓고 false 반환
 ```
 
+**75) [Sort Colors](https://leetcode.com/problems/sort-colors/)**
+```
+1. Hard, Hash Table
+2. my solution
+  1) t의 문자들의 개수를 map에 저장한다.
+  2) s의 idx1부터 idx2까지 t를 모두 포함하도록 한다.
+    a) idx1 : 이제 제외할 요소를 가리킨다.
+    b) idx2 : 이제 추가할 요소를 가리킨다.
+  3) idx2까지 t를 모두 포함하도록 idx2를 증가시킨다.
+  4) t에 있는 문자를 지날때마다, map의 해당 value를 감소시킨다.
+  5) 그 value가 0이 되면 n을 증가시킨다.
+  6) n==ms가 되면 idx1을 증가시키며 조건을 만족하지 않기 시작할 때를 찾는다.
+  7) t에 있는 것을 지나치게 되면 n을 감소시킨다.
+  8) ans와의 길이를 비교해서 더 짧은 것을 넣는다.
+3. best solution
+  1) 나와 비슷하지만 좀 더 효율적이다.
+  2) map을 사용하지 않고 문자를 하나의 index로 하여 vector에 저장한다.
+  3) 길이는 반복이 필요할 때 int형 변수에 미리 구해놓고 쓰는 것이 좋다.
+  4) if (freq[s[ei++]]-- > 0) requirement--;
+    a) 이 줄이 끝나고 ei는 증가하고 freq[s[ei++]]--는 감소한다.
+    b) t에 포함되어 있지 않는 문자는 항상 음의 값을 가지므로 requirement에는 영향이 없다.
+  5) string을 저장하지 않고 가장 짧을 때의 길이와 시작 index를 저장한다.
+  6) len = (ei - (head = si)); 처럼 한 줄에 두 변수를 assign 할 수 있다.
+```
+
 **78) [Subsets](https://leetcode.com/problems/subsets/)**
 ```
 1. Medium, Array, Backtracking, Bit Manipulation
