@@ -497,6 +497,23 @@ LeetCode / c++
 4. 몇 가지 방법이 있는가 라는 질문은 DP로 풀 수 있는 경우가 많다.
 ```
 
+**91) [Word Break](https://leetcode.com/problems/word-break/)**
+```
+1. Medium, DP
+2. my solution
+  1) s 보다 1개 더 긴 bool형 벡터 dp를 만든다.
+  2) 아무것도 안 넣었을 때 true를 넣기 위해 dp[0]=true
+  3) wordDict의 단어들을 set인 dict에 넣는다.
+  4) s의 처음부터 끝까지 살피면서, 해당 index까지 만들 수 있는 지 확인한다.
+  5) 이전 index 중 true가 들어간 곳부터 지금 index까지의 단어가 dict에 있는지 확인
+  6) 있으면 true를 넣고 break;
+3. best solution
+  1) set을 사용하는 것은 같다.
+  2) s의 처음부터 끝까지 살피는 것도 같다.
+  3) 앞의 index를 살피는 것이 아니라 wordDict가 앞에 올 수 있는 지 확인한다.
+  4) 올수 있고, 그게 오기 이전이 true라면 true 넣고 
+```
+
 **205) [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)**
 ```
 1. Easy, Hash Table
