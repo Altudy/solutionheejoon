@@ -1,7 +1,7 @@
 LeetCode / c++
 ------------------
 
-**1) [Two Sum](https://leetcode.com/problems/two-sum/)**
+**[1. Two Sum](https://leetcode.com/problems/two-sum/)**
 ```
 1. Easy, Array, Hash Table
 2. 2중 for문을 쓰면 효율적이지 못하다.
@@ -9,7 +9,7 @@ LeetCode / c++
 4. insert로 원소를 넣는 것보다 그냥 넣는것이 더 빠르다.
 ```
 
-**2) [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)**
+**[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)**
 ```
 1. Medium, Linked List, Math
 2. pointer의 이해와 활용이 필요하다. 이중 포인터.
@@ -23,7 +23,7 @@ LeetCode / c++
 5. node가 linked list의 각 노드를 가리키는 포인터가 되어 하나의 컨트롤러가 된다.
 ```
 
-**3) [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)**
+**[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)**
 ```
 1. Medium, Hash Table, Two Pointers, String, Sliding Window
 2. 두 개의 index를 이용하여 Sliding Window 방식을 사용했다
@@ -34,7 +34,7 @@ LeetCode / c++
   4) O(N)의 복잡도
 ```
 
-**4) [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)**
+**[4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)**
 ```
 1. Hard, Array, Binary Search, Divide and conquer
 2. 두 벡터의 시작에서부터 2개의 지점을 비교해가며 median 값까지 진행하였다.
@@ -54,7 +54,7 @@ LeetCode / c++
   2) median 값을 구한다.
 ```
 
-**5) [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)**
+**[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)**
 ```
 1. Medium, String, DP, palindrome
 2. 나는 길이가 짝수일 때와 홀수일 때를 나누어서 계산하였다. pal 이라는 vector를 따로 두기도 하였고 다른 것으로 대체할 수도 있을것 같았다.
@@ -67,7 +67,7 @@ LeetCode / c++
   2) 이전 정보를 사용하면 O(n^2) + 팰린드롬 검사 O(1)
 ```
 
-**10) [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)**
+**[10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)**
 ```
 1. Hard, String, DP, Backtracking
 2. my solution
@@ -100,7 +100,7 @@ LeetCode / c++
       - OPT[i + 1][j - 1] 0번 반복 
 ```
 
-**11) [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)**
+**[11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)**
 ```
 1. Medium, Array, Two pointers
 2. 양쪽의 값 중 작은 값을 더 큰 값이 되도록 당긴다.
@@ -113,7 +113,7 @@ LeetCode / c++
   3) 실행시킬 때마다 시간이 조금 다르기도 하다.
 ```
 
-**15) [3Sum](https://leetcode.com/problems/3sum/)**
+**[15. 3Sum](https://leetcode.com/problems/3sum/)**
 ```
 1. Medium, Array, Two pointers
 2. map과 set을 활용한다.
@@ -134,7 +134,7 @@ LeetCode / c++
     c) 합이 0이 될 때 값의 대소관계를 알고 있으니 그대로 결과 vector에 넣는다.
 ```
 
-**17) [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)**
+**[17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)**
 ```
 1. Medium, String, Backtracking, Depth first Search, Recursion
 2. 재귀를 사용하여 해결한다.
@@ -145,7 +145,7 @@ LeetCode / c++
 3. 다른 solution들과 방법이 같다.
 ```
 
-**19) [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)**
+**[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)**
 ```
 1. Medium, Linked List, Two Pointers
 2. 노드들의 포인터를 벡터에 저장하고 알맞은 위치의 포인터 하나만 바꿔줌
@@ -155,7 +155,7 @@ LeetCode / c++
   3) 맨 앞에 노드를 하나 더 만들면서 예외를 처리함
 ```
 
-**20) [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)**
+**[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)**
 ```
 1. Easy, String, Stack
 2. stack에 왼쪽 괄호들을 넣고 짝을 찾으면 pop. 마지막까지 수행했을 때 stack이 비어야 true를 반환
@@ -165,7 +165,7 @@ LeetCode / c++
   3) 왼쪽 괄호가 들어오면 짝이 맞는 오른쪽 괄호를 넣고, 오른쪽 괄호가 들어오면 stack.top에 자신이 있어야만 옳다.
 ```
 
-**21) [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)**
+**[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)**
 ```
 1. Easy, Linked List
 2. 화살표가 번갈아가며 나와야 한다. l1은 항상 다음 화살표의 시작이다.
@@ -180,7 +180,7 @@ LeetCode / c++
   3) 따로 빠져나가는 코드는 없다.
 ```
 
-**22) [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)**
+**[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)**
 ```
 1. Medium, String, Backtracking
 2. backtracking의 기본 문제
@@ -189,7 +189,7 @@ LeetCode / c++
   3) 왼쪽, 오른쪽 괄호를 추가하며 back을 반복한다.
 ```
 
-**23) [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)**
+**[23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)**
 ```
 1. Hard, Linked List, Divide and Conquer, Heap
 2. priority queue에 모든 list를 넣어 빼면서 정답을 만든다.
@@ -210,7 +210,7 @@ LeetCode / c++
   2) 1을 수행하면 vector의 길이는 반이 되고 vector의 길이가 1이될 때까지 수행한다.
 ```
 
-**32) [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)**
+**[32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)**
 ```
 1. Hard, String, Dynamic Programming, Stack
 2. stack의 top에 유효하기 시작한 곳의 index를 넣으면서 해결
@@ -222,7 +222,7 @@ LeetCode / c++
   6) ')'가 연속되더라도 이전 ')'는 없어지고 새로운 ')'가 쌓이는 방식이므로 ')'로 쌓일수 있는 stack의 높이는 최대 1이다.
 ```
 
-**33) [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)**
+**[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)**
 ```
 1. Medium, Array, Binary Search
 2. Brute force 로 해결
@@ -233,7 +233,7 @@ LeetCode / c++
   4) 확인된 쪽을 helper에 넣어 return
 ```
 
-**34) [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)**
+**[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)**
 ```
 1. Medium, Array, Binary Search
 2. 모든 target을 binary search로 찾고 그중 가장 작은 위치와 큰 위치를 찾아서 반환
@@ -247,7 +247,7 @@ LeetCode / c++
 6. 내 컴퓨터로 돌렸을 때 3가지 방법 모두 같은 시간이 걸렸다.
 ```
 
-**39) [Combination Sum](https://leetcode.com/problems/combination-sum/)**
+**[39. Combination Sum](https://leetcode.com/problems/combination-sum/)**
 ```
 1. Medium, Array, Backtracking
 2. best solution
@@ -258,7 +258,7 @@ LeetCode / c++
 3. 후보자 넣기 -> backtracking -> 후보자 빼기   => 이 구조를 잘 기억하라.
 ```
 
-**41) [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)**
+**[41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)**
 ```
 1. Hard, Array
 2. my solution
@@ -271,7 +271,7 @@ LeetCode / c++
   4) 시간복잡도는 내 방법이 더 좋다.
 ```
 
-**42) [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)**
+**[42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)**
 ```
 1. Hard, Array, Two Pointers, Stack
 2. my solution
@@ -288,7 +288,7 @@ LeetCode / c++
     d) 현재가 이전보다 높으면 total에 더해지는 것이 없음
 ```
 
-**45) [Jump Game II](https://leetcode.com/problems/jump-game-ii/)**
+**[45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)**
 ```
 1. Hard, Array, Greedy
 2. DP로 풀면 시간 초과였다.
@@ -298,7 +298,7 @@ LeetCode / c++
   3) 이 for문이 한 번 진행될 때 ans++
 ```
 
-**46) [Permutations](https://leetcode.com/problems/permutations/)**
+**[46. Permutations](https://leetcode.com/problems/permutations/)**
 ```
 1. Medium, Backtracking
 2. my solution
@@ -312,7 +312,7 @@ LeetCode / c++
   4) 차이 3 : temp에 값을 넣고 유망성 검사를 하지 않고 유망성 검사를 통과한 후 값을 넣는다.
 ```
 
-**48) [Rotate Image](https://leetcode.com/problems/rotate-image/)**
+**[48. Rotate Image](https://leetcode.com/problems/rotate-image/)**
 ```
 1. Medium, Array
 2. my solution
@@ -323,7 +323,7 @@ LeetCode / c++
   3) 2차원 배열의 한 사분면만 하면 나머지가 다 채워진다.
 ```
 
-**49) [Group Anagrams](https://leetcode.com/problems/group-anagrams/)**
+**[49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)**
 ```
 1. Medium, Hash Table, String
 2. my solution
@@ -335,7 +335,7 @@ LeetCode / c++
   3) 내 for문 안의 if문을 map[str].emplace_back(origin); 한줄로 바꿀 수 있다.
 ```
 
-**53) [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)**
+**[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)**
 ```
 1. Easy, Array, Divide and Conquer, Dynamic Programming
 2. best solution
@@ -344,7 +344,7 @@ LeetCode / c++
   3) 누적이 음수면 최대 누적값을 구하는데 도움이 되질 않는다.
 ```
 
-**55) [Jump Game](https://leetcode.com/problems/jump-game/)**
+**[55. Jump Game](https://leetcode.com/problems/jump-game/)**
 ```
 1. Medium, Array, Greedy
 2. my solution
@@ -357,7 +357,7 @@ LeetCode / c++
   3) 내 코드와 같은 속도
 ```
 
-**56) [Merge Intervals](https://leetcode.com/problems/merge-intervals/)**
+**[56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)**
 ```
 1. Medium, Array, Sort
 2. my solution
@@ -378,7 +378,7 @@ LeetCode / c++
   8) 범위를 res에 넣고 다음 tag를 false로
 ```
 
-**62) [Unique Paths](https://leetcode.com/problems/unique-paths/)**
+**[62. Unique Paths](https://leetcode.com/problems/unique-paths/)**
 ```
 1. Medium, Array, Dynamic Programming
 2. my solution
@@ -387,7 +387,7 @@ LeetCode / c++
   3) map[i][j] = map[i-1][j] + map[i][j-1] 방식으로 채운다.
 ```
 
-**64) [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)**
+**[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)**
 ```
 1. Medium, Array, Dynamic Programming
 2. my solution
@@ -396,7 +396,7 @@ LeetCode / c++
   3) map 배열에서 왼쪽 혹은 위쪽에서 합이 작은 경로를 통해 도착하도록 한다.
 ```
 
-**70) [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)**
+**[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)**
 ```
 1. Easy, Dynamic Programming
 2. my solution
@@ -404,7 +404,7 @@ LeetCode / c++
   2) 피보나치 수열
 ```
 
-**72) [Edit Distance](https://leetcode.com/problems/edit-distance/)**
+**[72. Edit Distance](https://leetcode.com/problems/edit-distance/)**
 ```
 1. Hard, String, Dynamic Programming
 2. my solution
@@ -413,7 +413,7 @@ LeetCode / c++
   3) 다르다면 삭제할 수 있으므로 dp[i][j-1] or dp[i-1][j], 대체할 수 있으므로 dp[i-1][j-1]에 작업량 1을 더한다.
 ```
 
-**75) [Sort Colors](https://leetcode.com/problems/sort-colors/)**
+**[75. Sort Colors](https://leetcode.com/problems/sort-colors/)**
 ```
 1. Medium, Array, Backtracking
 2. best solution
@@ -427,7 +427,7 @@ LeetCode / c++
   8) 그렇지 않으면 바꾼 문자를 원래대로 돌려놓고 false 반환
 ```
 
-**75) [Sort Colors](https://leetcode.com/problems/sort-colors/)**
+**[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)**
 ```
 1. Hard, Hash Table
 2. my solution
@@ -452,7 +452,7 @@ LeetCode / c++
   6) len = (ei - (head = si)); 처럼 한 줄에 두 변수를 assign 할 수 있다.
 ```
 
-**78) [Subsets](https://leetcode.com/problems/subsets/)**
+**[78. Subsets](https://leetcode.com/problems/subsets/)**
 ```
 1. Medium, Array, Backtracking, Bit Manipulation
 2. best solution 1 - backtracking
@@ -472,7 +472,7 @@ LeetCode / c++
   6) 1일 때 sub[i]에 수를 넣는다.
 ```
 
-**79) [Word Search](https://leetcode.com/problems/word-search/)**
+**[79. Word Search](https://leetcode.com/problems/word-search/)**
 ```
 1. Medium, Array, Two Pointers, Sort
 2. my solution
@@ -480,7 +480,33 @@ LeetCode / c++
   2) 0, 1, 2의 개수를 count하고 nums에 넣는다.
 ```
 
-**91) [Decode Ways](https://leetcode.com/problems/decode-ways/)**
+**[84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)**
+```
+1. Hard, Array, Stack
+2. my solution
+  1) stack에 {높이, 갯수} 를 넣는다.
+  2) heights 를 하나씩 본다.
+  3) stack의 top보다 큰 높이라면 {height, 1} 을 쌓는다.
+  4) 같은 높이라면 top.second++
+  5) top보다 높이가 작다면
+    a) top보다 높이가 크거나 같을 때까지 stack.pop
+    b) pop 하기 전에 높이와 갯수의 곱을 구하여 더 큰 수를 ans에 넣는다.
+    c) 이 때 갯수는 지금까지 pop한 기둥의 갯수인 n을 더하여 계산한다.
+    d) 높이가 같은 기둥이 나온다면 n+1을 더해준다.
+    f) {높이, n+1}을 넣어준다.
+  6) 마지막 기둥까지 계산해주기 위해 heights에 미리 0을 넣어둔다.
+3. best solution 1
+  1) 벡터를 stack 처럼 사용한다.
+  2) height를 하나씩 살펴본다.
+  3) 현재의 높이가 index가 가리키는 높이보다 작으면 루프를 돈다.
+    a) index가 가리키는 높이와 그 이전 index와의 차이를 곱하여 넓이를 구한다.
+  4) 현재의 index를 넣는다.
+4. best solution 2
+  1) 각 index에서 양쪽으로 최대한 갈 수 있는 곳의 index를 저장한다.
+  2) 모두 저장한 후 각 지점별 넓이를 구한다.
+```
+
+**[91. Decode Ways](https://leetcode.com/problems/decode-ways/)**
 ```
 1. Medium, String, DP
 2. my solution
@@ -497,7 +523,7 @@ LeetCode / c++
 4. 몇 가지 방법이 있는가 라는 질문은 DP로 풀 수 있는 경우가 많다.
 ```
 
-**91) [Word Break](https://leetcode.com/problems/word-break/)**
+**[139. Word Break](https://leetcode.com/problems/word-break/)**
 ```
 1. Medium, DP
 2. my solution
@@ -514,7 +540,7 @@ LeetCode / c++
   4) 올수 있고, 그게 오기 이전이 true라면 true 넣고 
 ```
 
-**205) [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)**
+**[205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)**
 ```
 1. Easy, Hash Table
 2. my solution
@@ -524,7 +550,7 @@ LeetCode / c++
   1) vector map을 2개를 만들고 그 map에 값이 있을 때 이전에 넣은 값과 다르면 false를 return
 ```
 
-**227) [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)**
+**[227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)**
 ```
 1. Medium, String, Stack
 2. my solution
@@ -547,7 +573,7 @@ LeetCode / c++
   4) stack만큼 더 안돌아도 되서 더 빠르고, stack을 쌓지 않아서 메모리도 더 절약할 수 있다.
 ```
 
-**322) [Coin Change](https://leetcode.com/problems/coin-change/)**
+**[322. Coin Change](https://leetcode.com/problems/coin-change/)**
 ```
 1. Medium, DP
 2. my solution
@@ -556,7 +582,7 @@ LeetCode / c++
 3. time complexity : O(k*n), space complexity : O(1)
 ```
 
-**380) [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)**
+**[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)**
 ```
 1. Medium, Array, Hash Table, Design
 2. my solution
@@ -573,7 +599,7 @@ LeetCode / c++
     a) vector size의 랜덤 index를 구하고 return
 ```
 
-**387) [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)**
+**[387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)**
 ```
 1. Easy, Hash Table, String
 2. my solution
@@ -585,7 +611,7 @@ LeetCode / c++
   3) 두번째 for문에서 알파벳의 수가 1이면 해당 index를 return
 ```
 
-**394) [Decode String](https://leetcode.com/problems/decode-string/)**
+**[394. Decode String](https://leetcode.com/problems/decode-string/)**
 ```
 1. Medium, Stack, DFS
 2. my solution
@@ -603,7 +629,7 @@ LeetCode / c++
   5) decode로 나온 문자열을 ret에 반복하여 더해준다.
 ```
 
-**560) [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)**
+**[560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)**
 ```
 1. Medium, Array, Hash Table
 2. best solution
@@ -615,7 +641,7 @@ LeetCode / c++
   6) 따라서 map에서 찾을 때 k-a로 찾기 위해서 -b를 넣는다.
 ```
 
-**692) [Decode String](https://leetcode.com/problems/decode-string/)**
+**[692. Decode String](https://leetcode.com/problems/decode-string/)**
 ```
 1. Medium, Hash Table, Heap, Trie
 2. my solution
@@ -625,7 +651,7 @@ LeetCode / c++
 3. map에 해당하는 key가 없더라도 map[key]++ 하면 1부터 시작된다.
 ```
 
-**746) [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)**
+**[746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)**
 ```
 1. Easy, Array, DP
 2. my solution
@@ -634,7 +660,7 @@ LeetCode / c++
 3. time complexity : O(n), space complexity : O(1)
 ```
 
-**939) [Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/)**
+**[939. Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/)**
 ```
 1. Medium, Hash Table, Hash Set
 2. my solution
@@ -643,7 +669,7 @@ LeetCode / c++
   3) 만약 있다면 사각형의 크기를 구하고 더 작은 크기를 저장한다.
 ```
 
-**1047) [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)**
+**[1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/)**
 ```
 1. Easy, Strack
 2. my solution
@@ -654,7 +680,7 @@ LeetCode / c++
   2) idx 변수를 쓰지 않고 ans.back을 사용
 ```
 
-**1209) [Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)**
+**[1209. Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)**
 ```
 1. Medium, Strack
 2. my solution
@@ -670,7 +696,7 @@ LeetCode / c++
   5) k와 같다면 count.top을 pop 하고 j를 k만큼 감소시킨다.
 ```
 
-**1704) [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)**
+**[1704. Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)**
 ```
 1. Easy, String
 2. my solution
@@ -678,7 +704,7 @@ LeetCode / c++
   2) 인자로 받은 string을 반으로 나누어 모음의 개수를 비교
 ```
 
-**1705) [Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples/)**
+**[1705. Maximum Number of Eaten Apples](https://leetcode.com/problems/maximum-number-of-eaten-apples/)**
 ```
 1. Medium, Heap, Greedy
 2. my solution
@@ -699,7 +725,7 @@ LeetCode / c++
   4) dp[p]가 0이 아니라면 먹을 사과가 있으므로 먹을 사과를 줄이고(dp[p]--) cnt++
 ```
 
-**1706) [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/)**
+**[1706. Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/)**
 ```
 1. Medium, Dynamic Programming
 2. my solution
