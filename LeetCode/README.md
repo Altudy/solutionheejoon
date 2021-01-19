@@ -629,6 +629,34 @@ LeetCode / c++
   5) decode로 나온 문자열을 ret에 반복하여 더해준다.
 ```
 
+**[416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)**
+```
+1. Medium, DP, knapsack, bitset
+2. my solution
+  1) bottom up으로 쌓아간다.
+  2) 조합으로 sum/2를 만들 수 있으면 합이 같은 두 집합을 만들 수 있다.
+  3) 2차원 벡터를 만든다.
+    a) row : 처음 0은 아무것도 안들어갔을 때, 그 다음부터는 nums의 수를 하나씩 고려
+    b) col : 해당 수까지의 sum을 만들 수 있는지
+  4) true가 되기 위해서는 num을 넣지 않은 d[i-1][j] 가 true여야 한다.
+  5) 혹은 num을 넣기 전인 dp[i-1][j-num] 이 true 여야 한다.
+  6) time complexity : O(n*s), space complexity : O(n*s)
+3. best solution 1
+  1) 내 방식과 비슷하지만 space complexity를 줄였다.
+  2) dp의 마지막부터 num까지를 계속 검사한다.
+  3) 즉, 같은 벡터를 num의 갯수만큼 훑어본다.
+  4) time complexity : O(n*s), space complexity : O(s)
+4. best solution 2
+  1) num의 개수 200, 최대값 100을 이용하여 100*200/2 +1 길이의 bitset을 만든다.
+  2) 각 자리수는 해당 수+1까지 더해질 수 있는지를 의미한다.
+    a) 10100 -> 합해서 2, 4가 나올 수 있다.
+  3) sum&1 은 합이 홀수일 때를 걸러내기 위함이다.
+  4) bits[sum >> 1] 부분 합이 sum일 때가 있는 지 확인한다.
+5. best solution 3
+  1) 위와 방법과 빠르기는 같고, 코드의 길이만 줄었다.
+  2) std::accumulate()를 사용하였다.
+```
+
 **[560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)**
 ```
 1. Medium, Array, Hash Table
