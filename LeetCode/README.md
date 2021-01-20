@@ -633,7 +633,7 @@ LeetCode / c++
 ```
 1. Medium, DP, knapsack, bitset
 2. my solution
-  1) bottom up으로 쌓아간다.
+  1) bottom up으로 쌓아간다. top down은 시간 초과
   2) 조합으로 sum/2를 만들 수 있으면 합이 같은 두 집합을 만들 수 있다.
   3) 2차원 벡터를 만든다.
     a) row : 처음 0은 아무것도 안들어갔을 때, 그 다음부터는 nums의 수를 하나씩 고려
@@ -655,6 +655,20 @@ LeetCode / c++
 5. best solution 3
   1) 위와 방법과 빠르기는 같고, 코드의 길이만 줄었다.
   2) std::accumulate()를 사용하였다.
+```
+
+**[518. Coin Change 2](https://leetcode.com/problems/coin-change-2/)**
+```
+1. Medium, DP, knapsack
+2. my solution
+  1) len+1 x amount+1 크기의 2차원 vector를 만든다.
+  2) 첫 번째 row는 아무것도 안넣을 때이다.
+  3) 첫 번째 col은 총 합이 0일 때이다.
+  4) dp[i][j] = dp[i-1][j] + dp[i][j - coins[i - 1]]
+3. best solution
+  1) 하나의 row만 사용한다.
+  2) dp[i][j] = dp[i-1][j] 부분을 이용하여 그대로 덮어서 쓴다.
+  3) time complexity : O(n*t), space complexity : O(t)
 ```
 
 **[560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)**
