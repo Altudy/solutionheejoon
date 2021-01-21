@@ -540,6 +540,23 @@ LeetCode / c++
   4) 올수 있고, 그게 오기 이전이 true라면 true 넣고 
 ```
 
+**[139. Word Break](https://leetcode.com/problems/word-break/)**
+```
+1. Medium, Array, DP
+2. my solution
+  1) min = min( nums[i], minsub[i-1]*nums[i], maxsub[i-1]*nums[i] )
+  2) max = max( nums[i], minsub[i-1]*nums[i], maxsub[i-1]*nums[i] )
+  3) 위 두개를 이용하여 각 위치에서의 최소 최대를 구한다.
+  4) 음수를 곱하면 최소가 최대가 바뀔 수 있기 때문에 최소도 구한다.
+  5) 마지막까지 했을 때 최대 중 최대를 구하면 된다.
+3. best solution 1
+  1) 나와 방법은 같지만 이전 최대 최소를 하나의 변수에 저장하여 공간을 절약하였다.
+  2) time complexity : O(n), space complexity : O(1)
+4. best solution 2
+  1) 위 두 방법과 비슷하다.
+  2) nums[i]가 음수일 때 둘을 바꾸면서 최대 최소를 찾는다.
+```
+
 **[205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)**
 ```
 1. Easy, Hash Table
