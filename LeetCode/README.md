@@ -739,6 +739,20 @@ LeetCode / c++
   2) idx 변수를 쓰지 않고 ans.back을 사용
 ```
 
+**[1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)**
+```
+1. Medium, DP
+2. my solution
+  1) 2차원 배열을 만든다.
+  2) 두 text가 같으면 대각선+1
+  3) 두 text가 다르면 위 혹은 이전 값에서 더 큰 값을 가져온다.
+3. best solution
+  1) 방법은 동일하지만, 공간을 절약하였다.
+  2) 이전 row의 정보만 필요하기 때문에 row의 길이는 2
+  3) 홀짝을 구별하여 위 아래를 번갈아가며 덮어씌운다.
+  4) time complexity : O(n*m), space complexity : O(m)
+```
+
 **[1209. Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)**
 ```
 1. Medium, Strack
