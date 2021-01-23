@@ -19,6 +19,7 @@ void dfs(string& now, string& target, int depth)
     }
 
     vector<string> candidates = graph[now];
+
     visit[now] = true;
     for (auto candi : candidates)
         dfs(candi, target, depth + 1);
@@ -26,23 +27,19 @@ void dfs(string& now, string& target, int depth)
 }
 
 int solution(string begin, string target, vector<string> words) {
-    int depth = 1;
-
-    bool possible(0);
+    bool possible = false;
     for (auto w : words)
         if (w == target) possible = true;
     if (!possible) return 0;
 
-    // graph
     words.push_back(begin);
     int len = words[0].length();
     int num = words.size();
-    int chk(0);
     for (int i = 0; i < num - 1; i++)
     {
         for (int j = i + 1; j < num; j++)
         {
-            chk = 0;
+            int chk = 0;
             for (int k = 0; k < len; k++)
             {
                 if (words[i][k] != words[j][k]) chk++;
