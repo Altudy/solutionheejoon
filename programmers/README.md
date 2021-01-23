@@ -123,7 +123,7 @@ programmers / c++
 [[2020 카카오 인턴십] 동굴 탐험](https://programmers.co.kr/learn/courses/30/lessons/67260)
 
 ```
-1. lev4 queue, Breadth First Search
+1. lev4, queue, Breadth First Search
 2. my solution
   1) 필요한 전역 변수들을 선언한다.
     a) edge : 해당 노드와 연결된 노드들을 저장한다.
@@ -141,4 +141,19 @@ programmers / c++
     d) 통과한다면 node를 들렸다고 visited에 표시한다.
     e) 만약 자신때문에 진행을 멈춘 노드가 있는지 need를 보고, 있으면 queue에 넣는다.
     f) 연결된 edge들을 모두 queue에 넣는다.
+```
+
+[단어 변환](https://programmers.co.kr/learn/courses/30/lessons/43163)
+
+```
+1. lev3, String, DFS, Backtracking
+2. my solution
+  1) words에 target이 있는지 검사하고 없으면 0 반환
+  2) 3중 for문으로 graph에 자신과 한글자 차이가 나는 word를 찾아 넣어준다.
+  3) dfs 함수로 begin을 root로 하여 진행한다.
+    a) 방문했던 곳이면 return
+    b) target에 도착하면 depth를 ans와 비교하며 저장
+    c) 현재 string을 visit에 표시하고 연결된 모든 string 노드로 들어가보며 확인한다.
+    d) 다 찾아본 후 visit을 false로 수정
+  4) ans이 여전히 51이면 0을 return
 ```
