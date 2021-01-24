@@ -506,6 +506,20 @@ LeetCode / c++
   2) 모두 저장한 후 각 지점별 넓이를 구한다.
 ```
 
+**[84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)**
+```
+1. Hard, Array, Hash Table, DP, Stack
+2. best solution 1
+  1) 넓이 = (right - left) x height 를 하기 위해서 값을 넣는다.
+    a) left : 이 사각형이 어디서부터 시작했는지
+    b) right : 이 사각형이 어디서 끝나는지
+    c) height : 이 사각형의 높이는
+  2) height는 '1'이면 이전 col 에서 1을 더하고, '0'이면 0으로 설정한다.
+  3) left는 '1'이면 이전 값과 현재 값 중 큰 값을 넣는다. 더 큰 값이 더 오른쪽이기 때문에 그쪽에 맞춘다.
+  4) right는 '1'이면 이전 값과 현재 값 중 작은 값을 넣는다.
+  5) 그렇게 구한 값들로 최대 넓이를 구한다.
+```
+
 **[91. Decode Ways](https://leetcode.com/problems/decode-ways/)**
 ```
 1. Medium, String, DP
