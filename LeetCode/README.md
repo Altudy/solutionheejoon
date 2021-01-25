@@ -506,7 +506,7 @@ LeetCode / c++
   2) 모두 저장한 후 각 지점별 넓이를 구한다.
 ```
 
-**[84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)**
+**[85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)**
 ```
 1. Hard, Array, Hash Table, DP, Stack
 2. best solution 1
@@ -535,6 +535,17 @@ LeetCode / c++
   3) 이전 값이 1 또는 2일 때 현재 값과 비교하여 26이하이면 이전값과 전전값을 더한다.
   4) 그렇지 않다면 이전값을 넣는다.
 4. 몇 가지 방법이 있는가 라는 질문은 DP로 풀 수 있는 경우가 많다.
+```
+
+**[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)**
+```
+1. Medium, Hash Table, Stack, Tree
+2. my solution
+  1) 
+3. best solution 1
+  1) 
+4. best solution 2
+  1)
 ```
 
 **[139. Word Break](https://leetcode.com/problems/word-break/)**
