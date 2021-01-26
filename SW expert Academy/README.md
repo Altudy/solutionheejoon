@@ -57,3 +57,17 @@ SW expert Academy / c++
   6) 하나의 case에서 주어진 수를 모두 처리하면 앞의 0을 제외하고 출력한다.
 3. 999^9는 long long int의 범위를 넘어서기 때문에 새로운 방식을 사용해야한다.
 ```
+
+[7088. 은기의 송아지 세기](https://swexpertacademy.com/main/solvingProblem/solvingProblem.do)
+
+```
+1. 구간의 합, segment tree
+2. my solution
+  1) ll~rr까지는 (rr까지 누적) - (ll-1까지 누적) 의 방식으로 구할 수 있다.
+  2) 모든 num을 받으면서 누적 값을 벡터에 저장한다.
+  3) ll~rr을 받으면 구간의 값을 계산하여 출력한다.
+3. 내 방식대로 했을 때, 아래의 코드를 적어야 시간 초과가 발생하지 않는다.
+	1) ios::sync_with_stdio(false);
+	2) cin.tie(0); cout.tie(0);
+4. 구간의 합을 쉽게 구하는 segment tree를 이용해도 좋다.
+```
