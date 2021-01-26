@@ -541,11 +541,29 @@ LeetCode / c++
 ```
 1. Medium, Hash Table, Stack, Tree
 2. my solution
-  1) 
+  1) Inorder 순서는 왼쪽부터 오른쪽으로의 순서를 말한다.
+  2) 재귀를 이용한다.
+  3) node를 넣고 왼쪽을 처리한 후 자신을 처리하고 오른쪽을 처리한다.
+  4) if(!node) 는 node가 nullptr일 때 0으로 표현됨을 활용한다.
+  5) time complexity : O(n), space complexity : O(n)
 3. best solution 1
-  1) 
+  1) stack을 사용한다.
+  2) 왼쪽이 nullptr이 될때까지 stk에 노드를 넣는다.
+  3) 왼쪽이 nullptr이면 stk.top을 보고 value 값을 저장한다.
+  4) 그리고 right로 포인터를 옮긴다.
+  5) time complexity : O(n), space complexity : O(n)
 4. best solution 2
-  1)
+  1) Morris traversal
+  2) root가 nullptr일 때까지 반복한다.
+  3) root의 왼쪽이 있을 때
+    a) root 왼쪽 자식의 오른쪽 끝까지 간다.
+    b) 그 끝의 오른쪽에 root을 넣는다.
+    c) 만약 그 끝에 root가 있었다면 root와의 연결을 끊는다.
+    d) root의 value를 넣고 root의 오른쪽으로 바꾼다.
+  4) root의 왼쪽이 없을 때
+    a) root의 value를 넣고 root를 오른쪽으로 바꾼다.
+    b) 예전 root를 오른쪽으로 계속 연결시켰기 때문에 오른쪽이 없다는 것은 마지막이라는 뜻이다.
+  5) time complexity : O(n), space complexity : O(1)
 ```
 
 **[139. Word Break](https://leetcode.com/problems/word-break/)**
