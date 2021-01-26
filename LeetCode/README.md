@@ -566,6 +566,15 @@ LeetCode / c++
   5) time complexity : O(n), space complexity : O(1)
 ```
 
+**[96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)**
+```
+1. Medium, DP, Tree
+2. my solution
+  1) 노드 n개가 있을 때 root가 하나 추가되었다고 볼 수 있다.
+  2) root가 하나 있고, 왼쪽과 오른쪽의 합이 n-1이 되도록 한다.
+  3) 양쪽의 경우를 곱하여 총 가능한 수를 구한다.
+```
+
 **[139. Word Break](https://leetcode.com/problems/word-break/)**
 ```
 1. Medium, DP
