@@ -575,6 +575,17 @@ LeetCode / c++
   3) 양쪽의 경우를 곱하여 총 가능한 수를 구한다.
 ```
 
+**[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)**
+```
+1. Medium, Tree, DFS, Recursion
+2. my solution
+  1) chk 함수를 정의한다.
+  2) 인자로 받은 노드가 nullptr이면 문제가 없으므로 true를 반환한다.
+  3) 인자로 받은 노드가 받은 범위를 벗어나면 false를 반환한다.
+  4) 왼쪽과 오른쪽 노드를 각각 새로운 범위와 함께 chk 함수를 실행하여 return한다.
+  5) INT_MAX가 root의 값으로 들어올 때 문제가 생기므로 LONG_MAX를 사용한다.
+```
+
 **[139. Word Break](https://leetcode.com/problems/word-break/)**
 ```
 1. Medium, DP
