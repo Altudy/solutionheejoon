@@ -586,6 +586,17 @@ LeetCode / c++
   5) INT_MAX가 root의 값으로 들어올 때 문제가 생기므로 LONG_MAX를 사용한다.
 ```
 
+**[101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)**
+```
+1. Easy, Tree, DFS, BFS, recursion
+2. my solution
+  1) 재귀로 동작하는 compare 함수를 만든다.
+  2) 인자로 받은 두 노드가 모두 nullptr이면 true를 반환한다.
+  3) 둘 중 하나만 nullptr이면 false를 반환한다.
+  4) 두 노드의 value가 다르다면 false를 반환한다.
+  5) 양쪽 노드의 반대쪽 자식을 함수의 인자로 넣는다.
+```
+
 **[139. Word Break](https://leetcode.com/problems/word-break/)**
 ```
 1. Medium, DP
@@ -603,7 +614,7 @@ LeetCode / c++
   4) 올수 있고, 그게 오기 이전이 true라면 true 넣고 
 ```
 
-**[139. Word Break](https://leetcode.com/problems/word-break/)**
+**[152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)**
 ```
 1. Medium, Array, DP
 2. my solution
