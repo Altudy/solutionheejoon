@@ -597,6 +597,25 @@ LeetCode / c++
   5) 양쪽 노드의 반대쪽 자식을 함수의 인자로 넣는다.
 ```
 
+**[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)**
+```
+1. Medium, Tree, BFS, recursion
+2. my solution
+  1) 재귀를 이용하여 풀었다.
+  2) recur() 함수의 인자로 받은 node가 nullptr이면 return
+  3) ans의 사이즈가 level과 작거나 같으면 ans[level]이 잘못된 접근이므로 빈 vector를 추가해준다.
+  4) 노드의 값을 추가한다.
+  5) 양쪽 자식을 1 증가된 level과 함께 recur() 함수의 인자로 넣는다.
+3. my soltuion 2
+  1) queue를 가지고 BFS로 풀었다.
+  2) queue는 노드와 level을 저장한다.
+  3) queue의 front를 보고 nullptr이면 넘어간다.
+  4) 노드의 양쪽을 queue에 넣는다.
+  5) level이 이전과 동일하다면 layer에 값을 넣는다.
+  6) level이 증가되었다면 지금까지 저장한 layer를 ans에 넣고 layer를 초기화하고 layer에 노드의 값을 넣는다.
+  7) level이 증가되면 layer가 ans에 넣어지는 형식이므로 마지막 layer는 while 문이 증가된 후에 넣는다.
+```
+
 **[139. Word Break](https://leetcode.com/problems/word-break/)**
 ```
 1. Medium, DP
