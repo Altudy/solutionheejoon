@@ -616,6 +616,15 @@ LeetCode / c++
   7) level이 증가되면 layer가 ans에 넣어지는 형식이므로 마지막 layer는 while 문이 증가된 후에 넣는다.
 ```
 
+**[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)**
+```
+1. Easy, Tree, DFS, recursion
+2. my solution
+  1) 이전 문제들과 비슷하다.
+  2) dfs 함수의 인자로 받은 node가 nullptr 이면 return
+  3) 해당 노드의 depth를 확인하며 가장 큰 depth를 저장
+```
+
 **[139. Word Break](https://leetcode.com/problems/word-break/)**
 ```
 1. Medium, DP
