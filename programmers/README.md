@@ -157,3 +157,21 @@ programmers / c++
     d) 다 찾아본 후 visit을 false로 수정
   4) ans이 여전히 51이면 0을 return
 ```
+
+[여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164)
+
+```
+1. lev3, DFS, Backtracking, Hash Table
+2. my solution
+  1) 비행기 티켓들을 보고 map을 만든다. key:출발지 value:갈 수 있는 목적지
+  2) 각 value를 sort한다.
+  3) ICN을 출발지로 dfs를 시작한다.
+  4) dfs의 t_num 인자는 사용한 티켓의 수이다.
+  5) 사용한 티켓의 수가 전체 티켓의 수가 되면 true를 반환한다.
+  6) 인자로 받은 현재 위치 cur에서 갈 수 있는 곳들을 살핀다.
+  7) 갈 곳으로 정한 곳은 빈 string ""를 넣는다.
+  8) ans에 갈 곳으로 정한 곳을 넣는다.
+  9) 다음 목적지를 dfs에 넣고 true를 반환하면 똑같이 true를 반환한다.
+  10) false라면 빈 string을 원래대로 되돌리고 ans도 pop_back 한다.
+3. dfs의 반환값이 있을 때 모든 노드를 다 확인하지 않아도 된다.
+```
