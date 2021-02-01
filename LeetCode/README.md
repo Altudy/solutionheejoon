@@ -625,6 +625,24 @@ LeetCode / c++
   3) 해당 노드의 depth를 확인하며 가장 큰 depth를 저장
 ```
 
+**[111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)**
+```
+1. Easy, Tree, DFS, BFS
+2. my solution
+  1) pair<TreeNode*, int> 의 데이터를 저장할 queue를 선언한다.
+  2) root를 queue에 넣는다.
+  3) queue가 비어있을 때까지 while
+    a) queue의 top을 가져온다.
+    b) top의 양쪽 자식이 nullptr이면 해당 노드의 depth를 반환한다.
+    c) 하나라도 nullptr이 아니면 {자식, 증가된 depth} 를 queue에 넣는다.
+3. best solution
+  1) 내 solution이 더 빠르다. dfs로 해결하였다.
+  2) 인자로 받은 노드가 nullptr이면 0을 반환한다.
+  3) 인자로 받은 노드의 자식들이 모두 nullptr이면 1을 반환한다.
+  4) 양쪽 자식으로부터의 min_depth를 저장한다.
+  5) min_depth + 1 을 반환하여 값을 위로 전달한다.
+```
+
 **[139. Word Break](https://leetcode.com/problems/word-break/)**
 ```
 1. Medium, DP
