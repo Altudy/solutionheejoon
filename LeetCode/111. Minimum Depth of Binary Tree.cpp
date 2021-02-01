@@ -29,7 +29,9 @@ int minDepth(TreeNode* root) {
             return 0;
         if(!root->left && !root->right)
             return 1;
-		int min_depth = INT_MAX;
+	
+        int min_depth = INT_MAX;
+	
         if(root->left)
             min_depth = min(min_depth, minDepth(root->left));
         if(root->right)
